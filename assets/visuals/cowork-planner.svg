@@ -1,32 +1,51 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 840" role="img" aria-labelledby="title desc">
-  <title id="title">Simulated Claude Cowork screen</title>
-  <desc id="desc">A stylized app window showing a Claude Cowork planning session.</desc>
-  <rect width="1200" height="840" fill="#f6efe4"/>
-  <rect x="94" y="62" width="1012" height="720" rx="30" fill="#fffdf9" stroke="#d8cebf" stroke-width="2"/>
-  <rect x="94" y="62" width="1012" height="72" rx="30" fill="#eef7f1"/>
-  <circle cx="146" cy="98" r="10" fill="#d5c58d"/>
-  <circle cx="178" cy="98" r="10" fill="#bad8c7"/>
-  <circle cx="210" cy="98" r="10" fill="#d5d5bd"/>
-  <text x="272" y="108" font-family="Georgia, serif" font-size="30" fill="#1c2528">Claude Cowork Example</text>
-  <rect x="142" y="174" width="400" height="530" rx="24" fill="#faf5eb" stroke="#e4dac8" stroke-width="2"/>
-  <text x="174" y="220" font-family="Georgia, serif" font-size="34" fill="#124b3d">Plan</text>
-  <text x="174" y="272" font-family="Georgia, serif" font-size="28" fill="#1d2528">Week 1</text>
-  <text x="174" y="310" font-family="Georgia, serif" font-size="24" fill="#59676f">Learn what Chat, Cowork,</text>
-  <text x="174" y="342" font-family="Georgia, serif" font-size="24" fill="#59676f">and Code are for.</text>
-  <text x="174" y="394" font-family="Georgia, serif" font-size="28" fill="#1d2528">Week 2</text>
-  <text x="174" y="432" font-family="Georgia, serif" font-size="24" fill="#59676f">Use Claude to solve one</text>
-  <text x="174" y="464" font-family="Georgia, serif" font-size="24" fill="#59676f">real-life problem at home.</text>
-  <text x="174" y="516" font-family="Georgia, serif" font-size="28" fill="#1d2528">Week 3</text>
-  <text x="174" y="554" font-family="Georgia, serif" font-size="24" fill="#59676f">Build one tiny project or</text>
-  <text x="174" y="586" font-family="Georgia, serif" font-size="24" fill="#59676f">automation you can keep.</text>
-  <rect x="582" y="186" width="458" height="122" rx="22" fill="#12352c"/>
-  <text x="612" y="238" font-family="Georgia, serif" font-size="28" fill="#f7fffc">Help me learn AI tools without feeling overwhelmed.</text>
-  <text x="612" y="274" font-family="Georgia, serif" font-size="28" fill="#f7fffc">Please keep it simple.</text>
-  <rect x="582" y="342" width="458" height="166" rx="22" fill="#f4ecdf" stroke="#e4dac8" stroke-width="2"/>
-  <text x="612" y="392" font-family="Georgia, serif" font-size="27" fill="#1d2528">Great. Let’s keep it small and useful.</text>
-  <text x="612" y="428" font-family="Georgia, serif" font-size="27" fill="#1d2528">I can turn this into short weekly steps,</text>
-  <text x="612" y="464" font-family="Georgia, serif" font-size="27" fill="#1d2528">practice prompts, and one starter project.</text>
-  <rect x="582" y="540" width="458" height="128" rx="22" fill="#dff5ec" stroke="#bcdccc" stroke-width="2"/>
-  <text x="612" y="592" font-family="Georgia, serif" font-size="27" fill="#114336">Next action</text>
-  <text x="612" y="628" font-family="Georgia, serif" font-size="27" fill="#114336">Choose one project you would actually enjoy using.</text>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1236 758" role="img" aria-labelledby="title desc">
+  <title id="title">Claude Cowork planning example</title>
+  <desc id="desc">A screenshot-style mockup of Claude desktop with Cowork selected and a realistic beginner planning prompt.</desc>
+  <rect width="1236" height="758" fill="#252320"/>
+  <rect x="0" y="0" width="244" height="758" fill="#2b2926"/>
+  <line x1="244" y1="0" x2="244" y2="758" stroke="#3a3733"/>
+  <text x="36" y="64" font-family="Arial, Helvetica, sans-serif" font-size="14" fill="#d8d2cb">New chat</text>
+  <text x="36" y="94" font-family="Arial, Helvetica, sans-serif" font-size="14" fill="#d8d2cb">Search</text>
+  <text x="36" y="124" font-family="Arial, Helvetica, sans-serif" font-size="14" fill="#d8d2cb">Customize</text>
+  <text x="36" y="170" font-family="Arial, Helvetica, sans-serif" font-size="14" fill="#d8d2cb">Chats</text>
+  <text x="36" y="200" font-family="Arial, Helvetica, sans-serif" font-size="14" fill="#d8d2cb">Projects</text>
+  <text x="36" y="230" font-family="Arial, Helvetica, sans-serif" font-size="14" fill="#d8d2cb">Artifacts</text>
+  <text x="14" y="404" font-family="Arial, Helvetica, sans-serif" font-size="12" fill="#8f8a84">Recents</text>
+  <text x="14" y="432" font-family="Arial, Helvetica, sans-serif" font-size="13" fill="#b9b2ab">I want to use Claude cowork ...</text>
+  <text x="14" y="460" font-family="Arial, Helvetica, sans-serif" font-size="13" fill="#b9b2ab">App concept development</text>
+  <text x="14" y="488" font-family="Arial, Helvetica, sans-serif" font-size="13" fill="#b9b2ab">Hello Klean hard water solution ...</text>
+  <rect x="14" y="726" width="36" height="36" rx="18" fill="#d7d0c7"/>
+  <text x="28" y="749" font-family="Arial, Helvetica, sans-serif" font-size="16" fill="#2b2926">J</text>
+  <text x="58" y="742" font-family="Arial, Helvetica, sans-serif" font-size="20" fill="#d8d2cb">Jules</text>
+  <text x="58" y="758" font-family="Arial, Helvetica, sans-serif" font-size="12" fill="#a8a29c">Max plan</text>
+  <rect x="538" y="8" width="160" height="34" rx="16" fill="#1f1d1b" stroke="#36322f"/>
+  <rect x="594" y="10" width="68" height="30" rx="15" fill="#2d2a27"/>
+  <text x="558" y="30" font-family="Arial, Helvetica, sans-serif" font-size="14" fill="#a6a09a">Chat</text>
+  <text x="611" y="30" font-family="Arial, Helvetica, sans-serif" font-size="14" fill="#ffffff">Cowork</text>
+  <text x="665" y="30" font-family="Arial, Helvetica, sans-serif" font-size="14" fill="#a6a09a">Code</text>
+  <text x="610" y="212" text-anchor="middle" font-family="Georgia, serif" font-size="26" fill="#d07d5a">*</text>
+  <text x="624" y="222" font-family="Georgia, serif" font-size="52" fill="#d7d0c7">Evening, Jules</text>
+  <rect x="406" y="252" width="672" height="126" rx="18" fill="#34312e" stroke="#4a4642"/>
+  <text x="426" y="286" font-family="Arial, Helvetica, sans-serif" font-size="15" fill="#f3ede7">Help me make a realistic plan to learn Claude without getting</text>
+  <text x="426" y="312" font-family="Arial, Helvetica, sans-serif" font-size="15" fill="#f3ede7">overwhelmed. I want small steps, plain English, and examples</text>
+  <text x="426" y="338" font-family="Arial, Helvetica, sans-serif" font-size="15" fill="#f3ede7">that fit real life, not pretend productivity superhero stuff.</text>
+  <text x="918" y="356" font-family="Arial, Helvetica, sans-serif" font-size="14" fill="#aca59d">Sonnet 4.6 Extended</text>
+  <rect x="1033" y="334" width="32" height="32" rx="8" fill="#d07d5a"/>
+  <text x="1044" y="355" font-family="Arial, Helvetica, sans-serif" font-size="18" fill="#fff8f4">↑</text>
+  <rect x="410" y="418" width="306" height="214" rx="18" fill="#2d2a27" stroke="#44403c"/>
+  <text x="432" y="450" font-family="Arial, Helvetica, sans-serif" font-size="12" fill="#8f8a84">Suggested plan</text>
+  <text x="432" y="486" font-family="Arial, Helvetica, sans-serif" font-size="22" fill="#f1ebe3">Week 1</text>
+  <text x="432" y="516" font-family="Arial, Helvetica, sans-serif" font-size="15" fill="#d8d2cb">Learn Chat, Cowork, and Code</text>
+  <text x="432" y="546" font-family="Arial, Helvetica, sans-serif" font-size="22" fill="#f1ebe3">Week 2</text>
+  <text x="432" y="576" font-family="Arial, Helvetica, sans-serif" font-size="15" fill="#d8d2cb">Use Claude for one real-life task</text>
+  <text x="432" y="606" font-family="Arial, Helvetica, sans-serif" font-size="22" fill="#f1ebe3">Week 3</text>
+  <text x="432" y="636" font-family="Arial, Helvetica, sans-serif" font-size="15" fill="#d8d2cb">Build one tiny project you will keep</text>
+  <rect x="742" y="418" width="336" height="214" rx="18" fill="#312e2b" stroke="#44403c"/>
+  <text x="764" y="450" font-family="Arial, Helvetica, sans-serif" font-size="12" fill="#8f8a84">Claude reply</text>
+  <text x="764" y="488" font-family="Arial, Helvetica, sans-serif" font-size="17" fill="#f1ebe3">Perfect. Let’s keep this practical.</text>
+  <text x="764" y="516" font-family="Arial, Helvetica, sans-serif" font-size="15" fill="#d8d2cb">No giant system. No fake hustle.</text>
+  <text x="764" y="546" font-family="Arial, Helvetica, sans-serif" font-size="15" fill="#d8d2cb">We will do small wins, real use cases,</text>
+  <text x="764" y="572" font-family="Arial, Helvetica, sans-serif" font-size="15" fill="#d8d2cb">and one project that is actually fun.</text>
+  <text x="764" y="616" font-family="Arial, Helvetica, sans-serif" font-size="14" fill="#d07d5a">Next up:</text>
+  <text x="822" y="616" font-family="Arial, Helvetica, sans-serif" font-size="14" fill="#d8d2cb">pick one app idea worth building</text>
 </svg>

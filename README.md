@@ -1,10 +1,10 @@
 # Claude Helper
 
-Claude Helper is a beginner-friendly guide for people who are new to AI, Mac apps, Terminal, and using Claude well.
+Claude Helper is a beginner-friendly guide for people who are new to AI, Mac apps, Terminal, and trying to figure out what Claude is actually good for.
 
-The goal is simple: help someone go from "I mostly use my phone or browser" to "I can actually use Claude Chat, Cowork, and Code without feeling lost."
+The goal is simple: help someone go from "I mostly use my phone or browser" to "I can use Claude Chat, Cowork, and Code without feeling like I accidentally joined Computer Camp."
 
-If you learn best by seeing things, this repo now includes visual walkthroughs and simulated app screens, not just text.
+If you learn best by seeing things, this repo includes visual walkthroughs, screenshot-style examples, and plain-English prompts you can actually reuse.
 
 ## Start In 30 Seconds
 
@@ -21,7 +21,7 @@ What this setup command does:
 - downloads or updates the repo into `~/Documents/Claude-Helper`
 - opens the visual FAQ in your browser
 - opens the project folder in Finder
-- points you to the best beginner files first
+- points you to the best beginner files first so you are not left wondering "cool... now what?"
 
 ## Start Here If You Are New
 
@@ -34,25 +34,25 @@ What this setup command does:
 
 In this repo, "effective" means:
 
-- using normal language instead of tech-heavy language
-- understanding what each Claude mode is good for
+- using normal language instead of tech-guy performance art
+- understanding what each Claude mode is actually good for
 - knowing what to click, paste, or ask next
-- fixing common Mac and Terminal problems without panic
+- fixing common Mac and Terminal problems without spiraling
 - using AI for useful, positive, real-life outcomes
 
 ## Which Claude Option Should I Use?
 
 `Chat`
 
-Use this when you want to ask, learn, plan, write, or think through ideas.
+Use this when you want to ask, learn, plan, write, or kick around an idea without making it a whole production.
 
 `Cowork`
 
-Use this when a task has more steps, more context, or feels a bit overwhelming and you want a guided partner.
+Use this when a task has more steps, more context, or just feels like a lot and you want a guided partner.
 
 `Code`
 
-Use this when you want Claude to help inside a real folder on your Mac, explain Terminal commands, work with files, or build something.
+Use this when you want Claude to help inside a real folder on your Mac, explain Terminal commands, work with files, or build something step by step.
 
 More detail: [docs/chat-code-cowork.md](docs/chat-code-cowork.md)
 
@@ -62,9 +62,9 @@ These were added for people who learn better by seeing examples:
 
 - visual first-run guide: [docs/first-10-minutes.html](docs/first-10-minutes.html)
 - markdown version for GitHub reading: [docs/first-10-minutes.md](docs/first-10-minutes.md)
-- simulated Claude Chat screen: [assets/visuals/chat-starter.svg](assets/visuals/chat-starter.svg)
-- simulated Claude Cowork screen: [assets/visuals/cowork-planner.svg](assets/visuals/cowork-planner.svg)
-- simulated Claude Code screen: [assets/visuals/code-helper.svg](assets/visuals/code-helper.svg)
+- screenshot-style Claude Chat example: [assets/visuals/chat-starter.svg](assets/visuals/chat-starter.svg)
+- screenshot-style Claude Cowork example: [assets/visuals/cowork-planner.svg](assets/visuals/cowork-planner.svg)
+- screenshot-style Claude Code example: [assets/visuals/code-helper.svg](assets/visuals/code-helper.svg)
 
 ## What Is In This Repo
 
@@ -89,7 +89,7 @@ This repo focuses on helpful, grounded use cases such as:
 - organizing projects and daily life
 - helping older adults understand scam risks and privacy basics
 - finding trustworthy help, local services, food banks, or local news sources
-- building simple automations that save time
+- building simple automations that save time without becoming a second job
 
 ## Example App In This Repo
 
@@ -114,5 +114,5 @@ Start with:
 ## Notes
 
 - This repo is designed to be friendly first and technical second.
-- If a step feels confusing, rewrite it in even plainer words.
+- If a step feels confusing, rewrite it in even plainer words and trim the fluff.
 - If tools change over time, check the latest links in [docs/sources.md](docs/sources.md).

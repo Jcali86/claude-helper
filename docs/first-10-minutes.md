@@ -1,6 +1,6 @@
 # Your First 10 Minutes With Claude
 
-This guide is for someone who wants to see what using Claude looks like, not just read abstract advice.
+This guide is for someone who wants to see what using Claude actually looks like, not just read vague advice written by people who have clearly been living in Terminal since 2009.
 
 If you prefer a more visual version, open:
 
@@ -13,19 +13,18 @@ In your first 10 minutes, you can learn:
 - what `Chat` feels like
 - when to use `Cowork`
 - what `Code` is for
-- what kind of questions actually work well
+- what kind of questions actually work well without sounding robotic
 
 ## Minute 1 To 3: Start With Chat
 
-`Chat` is the easiest place to begin.
+`Chat` is the easiest place to begin because it feels the most natural.
 
 Try a prompt like this:
 
 ```text
-I am new to AI and new to using a Mac outside a browser.
-Please explain things simply and avoid jargon.
-Help me understand what Claude can do for everyday life, learning,
-and small projects.
+Hi Claude. Help me learn what I can actually do with you.
+I am new to AI and want to learn the basics, but please keep it simple,
+practical, and not overly technical.
 ```
 
 Visual example:
@@ -35,8 +34,8 @@ Visual example:
 Why this works:
 
 - it tells Claude your experience level
-- it asks for simple language
-- it gives a clear goal
+- it asks for normal-people language
+- it gives a clear goal without overcomplicating it
 
 ## Minute 4 To 6: Try Cowork
 
@@ -45,8 +44,9 @@ Use `Cowork` when the task is bigger and you want structure.
 Try a prompt like this:
 
 ```text
-Help me plan a simple project to learn AI tools without getting overwhelmed.
-I want small steps, plain English, and examples I could actually use at home.
+Help me make a realistic plan to learn Claude without getting overwhelmed.
+I want small steps, plain English, and examples that fit real life,
+not pretend productivity superhero stuff.
 ```
 
 Visual example:
@@ -58,7 +58,7 @@ Good uses for Cowork:
 - planning a project
 - comparing options
 - organizing a bigger life task
-- learning something over time
+- learning something over time without getting smoked in week one
 
 ## Minute 7 To 10: Try Code
 
@@ -67,9 +67,10 @@ Use `Code` when Claude is helping inside a real folder or project.
 Try a prompt like this:
 
 ```text
-I am new to Terminal and coding projects.
-Please explain every step in plain language.
-Help me build a very simple app that collects positive local news and shows me a summary.
+I am new to Terminal and coding projects, so please explain every step
+in plain English before we do it.
+Help me build a very simple app that pulls in positive local news and
+shows me a clean summary.
 ```
 
 Visual example:
@@ -81,7 +82,7 @@ Good uses for Code:
 - building a small tool
 - fixing an error
 - explaining a command
-- editing files safely
+- editing files safely without feeling like one typo will end civilization
 
 ## Three Prompts You Can Reuse
 
@@ -90,26 +91,29 @@ Good uses for Code:
 ```text
 Please explain this as if I am smart but new to this.
 Use simple language and show me one step at a time.
+Do not skip the obvious bits.
 ```
 
 `Show me what good looks like`
 
 ```text
-Give me an example of a good prompt, a good result, and why it works.
+Show me a solid example prompt, the kind of answer I should expect,
+and why that prompt works.
 ```
 
 `Help me stay calm`
 
 ```text
 If something could break or confuse me, tell me before we do it.
+Flag the risky part first, then show me the safe next step.
 ```
 
 ## Best Habit To Build Early
 
-Tell Claude your level of experience at the start.
+Tell Claude your level of experience right at the start.
 
-That one small habit makes the answers much more useful.
+That one small habit makes the answers way more useful.
 
 ## If You Want To Add Real Screenshots Later
 
-These SVG visuals are simple mockups that help explain the idea. You can later replace them with real screenshots from the Mac app while keeping the same guide structure.
+The visuals in this guide are custom mockups based on a real Claude screen layout. You can later swap them for real screenshots from the Mac app while keeping the same guide structure.
