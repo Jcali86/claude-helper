@@ -1,6 +1,6 @@
 # Your First 10 Minutes With Claude
 
-This guide is for someone who wants to see what using Claude actually looks like, not just read vague advice written by people who have clearly been living in Terminal since 2009.
+This guide is for someone who wants to see what using Claude looks like in real life, not just read abstract advice.
 
 If you prefer a more visual version, open:
 
@@ -50,7 +50,7 @@ Try a prompt like this:
 ```text
 Help me make a realistic plan to learn Claude without getting overwhelmed.
 I want small steps, plain English, and examples that fit real life,
-not pretend productivity superhero stuff.
+not generic productivity advice.
 ```
 
 Visual example:
@@ -66,7 +66,7 @@ Good uses for Cowork:
 - planning a project
 - comparing options
 - organizing a bigger life task
-- learning something over time without getting smoked in week one
+- learning something over time without feeling overwhelmed early on
 
 ## Minute 7 To 10: Try Code
 
@@ -75,8 +75,9 @@ Use `Code` when Claude is helping inside a real folder or project.
 One important thing first:
 
 - open the project folder in Claude Code before you paste a Code prompt
-- that is how Claude knows which files and app you mean
-- you do not need a special Skill or integration for a basic beginner project
+- Claude Code can read the files in the folder you opened
+- it cannot guess the right project if the wrong folder is open
+- most beginners do not need a skill or integration to ask questions or start a simple project
 
 If you are unsure whether Claude is looking at the right place, say:
 
@@ -107,7 +108,7 @@ Good uses for Code:
 - building a small tool
 - fixing an error
 - explaining a command
-- editing files safely without feeling like one typo will end civilization
+- editing files safely with clear explanations along the way
 
 ## Three Prompts You Can Reuse
 
@@ -137,7 +138,7 @@ Flag the risky part first, then show me the safe next step.
 
 Tell Claude your level of experience right at the start.
 
-That one small habit makes the answers way more useful.
+That one small habit makes the answers much more useful.
 
 ## If You Want To Add Real Screenshots Later
 

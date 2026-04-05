@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Positive Local News Example App</title>
+    <link rel="stylesheet" href="../assets/site.css">
+  </head>
+  <body>
+    <main class="page">
+      <section class="hero">
+        <span class="eyebrow">Example App</span>
+        <h1>Positive local news digest</h1>
+        <p class="muted">
+          This is the first real project in the repo. It is small enough for a beginner to understand,
+          useful enough to feel real, and simple enough to improve with Claude step by step.
+        </p>
+        <div class="button-row">
+          <a class="button primary" href="../index.html">Back to homepage</a>
+          <a class="button secondary" href="./code-examples.html">Code examples</a>
+          <a class="button secondary" href="./common-issues.html">Common Issues</a>
+        </div>
+      </section>
+
+      <section class="split">
+        <article class="panel">
+          <h2>What this app does</h2>
+          <ul class="mini-list">
+            <li>Reads a small list of local or community feeds</li>
+            <li>Looks for positive or community-helpful stories</li>
+            <li>Builds a short digest page in the browser</li>
+            <li>Can run on your Mac with Python</li>
+            <li>Can later be packaged with Docker</li>
+          </ul>
+        </article>
+
+        <article class="panel">
+          <h2>Why this is a good first project</h2>
+          <ul class="mini-list">
+            <li>It does something useful in real life.</li>
+            <li>It shows how data, filtering, and a simple web page fit together.</li>
+            <li>It is small enough for Claude Code to explain clearly.</li>
+            <li>It gives you a safe base for trying improvements in phases.</li>
+          </ul>
+        </article>
+      </section>
+
+      <section class="panel" style="margin-top: 20px;">
+        <h2>How to run it locally</h2>
+        <p>From inside the <code>positive-news-digest</code> folder, run:</p>
+        <div class="code-block">python3 app.py</div>
+        <p>Then open:</p>
+        <div class="code-block">http://localhost:8000</div>
+      </section>
+
+      <section class="panel" style="margin-top: 20px;">
+        <h2>Before you ask Claude Code for help</h2>
+        <p>
+          Open the <code>positive-news-digest</code> folder first.
+        </p>
+        <p>
+          Claude Code can read the files in the folder you opened. It cannot guess the right project if the wrong folder is open.
+        </p>
+        <p>
+          Most beginners do not need a skill or integration to start working on this project.
+        </p>
+        <p>If you want to check the folder first, paste this:</p>
+        <div class="code-block">Before we change anything, please tell me what folder and files you can currently see.</div>
+      </section>
+
+      <section class="grid" style="margin-top: 20px;">
+        <article class="panel">
+          <h2>Prompt 1: Learn the app</h2>
+          <div class="code-block">You are looking at the positive-news-digest project folder.
+Please explain this app in plain language.
+Walk me through what each file does, how the app works right now,
+and where the current limits are.</div>
+        </article>
+
+        <article class="panel">
+          <h2>Prompt 2: Improve it safely</h2>
+          <div class="code-block">You are looking at the positive-news-digest project folder.
+Please review this app and suggest the next best small improvement.
+Explain the tradeoffs in plain English before changing anything.
+Then implement only one improvement at a time, test it, and summarize what changed.</div>
+        </article>
+
+        <article class="panel">
+          <h2>Prompt 3: Build it in phases</h2>
+          <div class="code-block">You are looking at the positive-news-digest project folder.
+Please turn this app into a more complete local app.
+Keep it local-first and explain each step in plain English.
+Work in phases instead of trying to do everything at once.
+Pause at the end of each phase and tell me the next safe step.</div>
+        </article>
+      </section>
+
+      <section class="panel" style="margin-top: 20px;">
+        <h2>Suggested build order</h2>
+        <ol class="steps">
+          <li>Let me add my own town or city sources, and improve the positivity filter.</li>
+          <li>Save old digests by date, and add a simple settings page for non-technical users.</li>
+          <li>Send the digest by email after the local version feels solid.</li>
+        </ol>
+      </section>
+    </main>
+  </body>
+</html>

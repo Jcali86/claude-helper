@@ -66,10 +66,11 @@ In very plain English, that means:
 Why this matters:
 
 - Claude Code can read the files in the folder you opened
+- it cannot guess the right project if the wrong folder is open
 - that gives it the context for `app.py`, `data/sources.json`, and the rest of the project
 - you do not need to explain every filename by hand if Claude Code is already inside the right folder
 
-You do not need a special Skill or integration just to use these prompts.
+Most beginners do not need a skill or integration to ask questions or start a simple project.
 
 If Claude Code is not opened in this project folder yet, say this first:
 

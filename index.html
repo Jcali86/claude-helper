@@ -10,37 +10,38 @@
     <main class="page">
       <section class="hero">
         <span class="eyebrow">Beginner-Friendly Claude Help</span>
-        <h1>Learn Claude without the weird gatekeeping.</h1>
+        <h1>Learn Claude in plain English.</h1>
         <p class="muted">
           Claude Helper is for people who are new to AI, new to Mac workflows,
-          or just tired of instructions that act like everyone has been coding since middle school.
+          or just tired of instructions that assume too much too early.
         </p>
         <div class="button-row">
-          <a class="button primary" href="docs/first-10-minutes.html">Start the visual guide</a>
-          <a class="button secondary" href="README.md">Open the README</a>
+          <a class="button primary" href="docs/first-10-minutes.html">Start here</a>
+          <a class="button secondary" href="docs/chat-code-cowork.html">Mode guide</a>
           <a class="button secondary" href="docs/faq.html">Open the FAQ</a>
         </div>
       </section>
 
       <section class="split">
         <article class="panel">
-          <h2>Quick start</h2>
+          <h2>Best First Step</h2>
           <p>
-            If you want the easiest path, copy this command into Terminal:
+            If you are brand new, use this order:
           </p>
-          <div class="code-block">bash &lt;(curl -fsSL https://raw.githubusercontent.com/Jcali86/claude-helper/main/setup.sh)</div>
-          <p class="muted">
-            It downloads the repo, opens the starter pages, and gives you a solid place to begin without a bunch of setup chaos.
-          </p>
+          <ol class="steps">
+            <li>Open the First 10 Minutes guide.</li>
+            <li>Use the Mode Guide to learn the difference between Chat, Cowork, and Code.</li>
+            <li>If something goes wrong, open Common Issues.</li>
+          </ol>
         </article>
 
         <article class="panel">
-          <h2>What this project helps with</h2>
+          <h2>Important Before You Use Code</h2>
           <ul class="mini-list">
-            <li>understanding Claude Chat, Cowork, and Code</li>
-            <li>learning Mac and Terminal basics in plain language</li>
-            <li>using AI for positive daily life, learning, and creativity</li>
-            <li>building small projects without needing to become "the tech person"</li>
+            <li>Claude Code can read the files in the folder you opened.</li>
+            <li>It cannot guess the right project if the wrong folder is open.</li>
+            <li>Most beginners do not need a skill or integration to start asking questions.</li>
+            <li>If you are unsure, ask Claude what folder and files it can currently see.</li>
           </ul>
         </article>
       </section>
@@ -48,41 +49,47 @@
       <section class="three-up" style="margin-top: 20px;">
         <article class="panel">
           <h2>Chat</h2>
-          <p>Best for asking, learning, planning, writing, and getting unstuck without overthinking it.</p>
-          <a href="docs/chat-code-cowork.md">See examples</a>
+          <p>Best for asking questions, learning, planning, writing, and getting unstuck.</p>
+          <a href="docs/chat-code-cowork.html#chat">See examples</a>
         </article>
 
         <article class="panel">
           <h2>Cowork</h2>
-          <p>Best for bigger tasks that need more structure, momentum, and a little backup.</p>
-          <a href="docs/first-10-minutes.html#cowork">See the visual walkthrough</a>
+          <p>Best for bigger tasks that need more structure, momentum, and guided support.</p>
+          <a href="docs/chat-code-cowork.html#cowork">See examples</a>
         </article>
 
         <article class="panel">
           <h2>Code</h2>
           <p>Best when Claude is helping in a real folder with files, commands, and projects step by step.</p>
           <p class="muted">Open the project folder first so Claude knows what files you mean.</p>
-          <a href="docs/first-10-minutes.html#code">See the Code example</a>
+          <a href="docs/chat-code-cowork.html#code">See examples</a>
         </article>
       </section>
 
       <section class="three-up" style="margin-top: 20px;">
         <article class="nav-card panel">
           <h2>First 10 Minutes</h2>
-          <p>Visual walkthrough with real Claude screenshots you can use as training wheels.</p>
+          <p>Visual walkthrough with real Claude screenshots and clear starter prompts.</p>
           <a href="docs/first-10-minutes.html">Open guide</a>
         </article>
 
         <article class="nav-card panel">
           <h2>Common Issues</h2>
-          <p>Permission problems, path confusion, missing tools, and how to fix them without losing your cool.</p>
-          <a href="docs/common-issues.md">Open help page</a>
+          <p>Permission problems, path confusion, missing tools, and how to fix them in plain language.</p>
+          <a href="docs/common-issues.html">Open help page</a>
+        </article>
+
+        <article class="nav-card panel">
+          <h2>Folder Paths</h2>
+          <p>If Mac file locations feel confusing, this page shows the easiest way to get the right path into Terminal.</p>
+          <a href="docs/folder-paths.html">Open path guide</a>
         </article>
 
         <article class="nav-card panel">
           <h2>Example App</h2>
           <p>A positive local news digest starter you can run locally and later turn into a containerized app.</p>
-          <a href="examples/positive-news-digest/README.md">Open example</a>
+          <a href="docs/positive-news-example.html">Open example</a>
         </article>
       </section>
 
@@ -128,7 +135,7 @@
       </section>
 
       <p class="footer">
-        Built to help people learn Claude with more confidence, less friction, and way less nonsense.
+        Built to help people learn Claude with more confidence and clearer next steps.
       </p>
     </main>
   </body>

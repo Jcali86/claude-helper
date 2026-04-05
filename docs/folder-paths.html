@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Folder Paths on Mac</title>
+    <link rel="stylesheet" href="../assets/site.css">
+  </head>
+  <body>
+    <main class="page">
+      <section class="hero">
+        <span class="eyebrow">Mac Basics</span>
+        <h1>Folder paths on Mac, explained simply</h1>
+        <p class="muted">
+          A folder path is just the address of a file or folder on your Mac.
+          If that sounds annoying, the good news is you usually do not need to type it by hand.
+        </p>
+        <div class="button-row">
+          <a class="button primary" href="../index.html">Back to homepage</a>
+          <a class="button secondary" href="./common-issues.html">Common Issues</a>
+          <a class="button secondary" href="./faq.html">FAQ</a>
+        </div>
+      </section>
+
+      <section class="split">
+        <article class="panel">
+          <h2>What a path looks like</h2>
+          <p>Example:</p>
+          <div class="code-block">/Users/yourname/Documents/Claude-Helper</div>
+          <p>
+            That means: start at your user account, open <code>Documents</code>, then open the <code>Claude-Helper</code> folder.
+          </p>
+        </article>
+
+        <article class="panel">
+          <h2>The easiest beginner method</h2>
+          <ol class="steps">
+            <li>Open Finder.</li>
+            <li>Find the folder you want.</li>
+            <li>Drag that folder into the Terminal window.</li>
+          </ol>
+          <p class="muted">
+            Your Mac will paste the full path for you.
+          </p>
+        </article>
+      </section>
+
+      <section class="grid" style="margin-top: 20px;">
+        <article class="panel">
+          <h2>What <code>~</code> means</h2>
+          <p>
+            The <code>~</code> symbol means your Home folder.
+          </p>
+          <div class="code-block">~/Documents</div>
+          <p>
+            It points to the same general place as <code>/Users/yourname/Documents</code>.
+          </p>
+        </article>
+
+        <article class="panel">
+          <h2>How paths go wrong</h2>
+          <ul class="mini-list">
+            <li>You copied someone else's username.</li>
+            <li>You copied a folder name that does not match your Mac.</li>
+            <li>You guessed instead of dragging the folder in.</li>
+          </ul>
+        </article>
+
+        <article class="panel">
+          <h2>Plain-English example</h2>
+          <p>
+            If someone gives you this path:
+          </p>
+          <div class="code-block">/Users/jamie/Documents/Project</div>
+          <p>
+            and your Mac username is <code>Chris</code>, your version would need to use:
+          </p>
+          <div class="code-block">/Users/Chris/Documents/Project</div>
+        </article>
+      </section>
+
+      <section class="panel" style="margin-top: 20px;">
+        <h2>Best habit to keep</h2>
+        <p>
+          If you are unsure, do not guess. Use Finder, then drag the folder into Terminal.
+        </p>
+      </section>
+    </main>
+  </body>
+</html>

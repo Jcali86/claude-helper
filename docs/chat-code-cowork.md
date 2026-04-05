@@ -17,7 +17,7 @@ Use it for:
 
 Examples:
 
-- "Explain what Terminal is like I am new to Mac."
+- "Explain what Terminal is like. I am new to Mac."
 - "Help me write a polite email."
 - "Give me 10 family game night ideas."
 
@@ -46,9 +46,11 @@ Think of `Code` like bringing Claude into a real folder on your computer so it c
 
 Before you use `Code`, open the project folder you want help with.
 
-That is what gives Claude the context for the files, folders, and app you are talking about.
+Claude Code can read the files in the folder you opened.
 
-You do not need a special Skill or integration for normal beginner steps.
+It cannot guess the right project if the wrong folder is open.
+
+Most beginners do not need a skill or integration to ask questions or start a simple project.
 
 Use it for:
 

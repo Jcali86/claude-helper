@@ -66,6 +66,8 @@ This usually means Claude Code is not looking at the right folder yet.
 Try:
 
 - open the project folder first in Claude Code
+- remember that Claude Code can read the files in the folder you opened
+- if the wrong folder is open, Claude cannot guess the right project
 - ask: `Before we start, please tell me what folder and files you can currently see.`
 - if the folder is wrong, open the correct one and ask again
 
