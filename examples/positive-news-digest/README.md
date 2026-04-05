@@ -1,53 +1,77 @@
 # Positive Local News Digest
 
-This is a starter project brief for a simple app that gathers positive local news and sends a friendly digest by email.
+This folder is a real beginner-friendly starter project, not just an idea.
 
-## Goal
+It gives you a simple local web app that:
 
-Build a small app that:
+- reads a small list of news or community feeds
+- looks for positive or community-helpful stories
+- generates a short digest
+- shows the result in a browser
+- can later be containerized with Docker
 
-- looks at trusted local sources
-- filters for helpful, hopeful, or community-positive stories
-- creates a short digest in plain English
-- emails the update on a schedule
-- runs in a container so setup is more repeatable
+## Why This Project Matters
 
-## Why This Is A Good Example
+This is a good example of using AI and automation in a positive way:
 
-- it is useful in real life
-- it can help people feel more connected to their community
-- it shows how AI can be positive, practical, and grounded
-- it is a good beginner project for Claude Code
+- it helps people feel more connected to their area
+- it can highlight good news instead of only stressful news
+- it can be adapted for schools, libraries, local groups, and neighborhoods
 
-## Suggested Sources
+## What Is Included
 
-- local newspaper RSS feeds
-- city and county news pages
-- library announcements
-- school district updates
-- nonprofit organization updates
+- `app.py`: the local server and digest generator
+- `data/sources.json`: a starter list of feed URLs
+- `data/sample_feed.xml`: local sample data so the app still works as a demo
+- `templates/index.html`: the browser page template
+- `Dockerfile`: a simple container setup
 
-## Suggested Build Stack
+## Run It Locally
 
-- `Node.js` or `Python`
-- `Docker` for the container
-- simple scheduled job for daily or weekly updates
-- email delivery tool or provider
+From inside this folder:
 
-## Beginner-Friendly Prompt To Use In Claude Code
-
-```text
-Help me build a very simple positive local news digest app for beginners.
-Use plain language and explain each step before doing it.
-The app should collect stories from a small list of trusted local sources,
-filter for positive community news, generate a short summary, and prepare an
-email digest. Use Docker so setup is simpler. Create a clear README and keep
-the code easy to understand.
+```bash
+python3 app.py
 ```
 
-## Important Safety Notes
+Then open:
 
-- use trusted sources
-- clearly show where stories came from
-- let the user review summaries before sending
-- do not pretend an AI summary is the same as the original reporting
+```text
+http://localhost:8000
+```
+
+## What Happens When You Run It
+
+- the app tries to fetch the feeds in `data/sources.json`
+- if that fails, it falls back to `data/sample_feed.xml`
+- it filters for positive language
+- it creates a digest page with featured stories and source links
+
+## Good Beginner Prompt For Claude Code
+
+```text
+Please explain this project in plain language.
+Show me what each file does, then help me improve it one small step at a time.
+If there is a safer or simpler way to do something, tell me before changing it.
+```
+
+## Next Improvements You Could Ask Claude For
+
+- send the digest by email
+- let me add my own town or city sources
+- add a better positivity filter
+- save old digests by date
+- add a settings page for non-technical users
+
+## Docker
+
+This project includes a `Dockerfile` for later use. Once Docker is installed, the expected flow is:
+
+```bash
+docker build -t positive-news-digest .
+docker run -p 8000:8000 positive-news-digest
+```
+
+## Note
+
+This starter uses simple keyword filtering, not advanced AI classification. That keeps the project easier to understand for beginners and gives Claude Code a solid base to improve later.

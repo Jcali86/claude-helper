@@ -45,6 +45,14 @@ if [ -f "$INSTALL_DIR/docs/faq.html" ]; then
   open "$INSTALL_DIR/docs/faq.html"
 fi
 
+if [ -f "$INSTALL_DIR/docs/first-10-minutes.html" ]; then
+  open "$INSTALL_DIR/docs/first-10-minutes.html"
+fi
+
+if [ -f "$INSTALL_DIR/index.html" ]; then
+  open "$INSTALL_DIR/index.html"
+fi
+
 if [ -f "$INSTALL_DIR/README.md" ]; then
   open "$INSTALL_DIR/README.md"
 fi
@@ -54,7 +62,7 @@ open "$INSTALL_DIR"
 print_block "Setup complete."
 print_block "Next steps:"
 printf "%s\n" \
-  "1. Read the FAQ page that just opened." \
-  "2. Read the README for the simple path forward." \
+  "1. Read the visual first-10-minutes page that just opened." \
+  "2. Use the homepage to jump to the guide you need." \
   "3. If you get stuck, open docs/common-issues.md." \
   "4. If a folder path is confusing, open docs/folder-paths.md."

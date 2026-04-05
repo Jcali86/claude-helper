@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0">
+  <channel>
+    <title>Sample Community Feed</title>
+    <item>
+      <title>Local library opens new weekend reading program for families</title>
+      <link>https://example.org/library-reading-program</link>
+      <description>The program gives families a free place to read, learn, and spend time together every Saturday.</description>
+    </item>
+    <item>
+      <title>Neighborhood volunteers restore community garden after storm</title>
+      <link>https://example.org/community-garden</link>
+      <description>Residents worked together to restore a shared green space and prepare it for spring classes.</description>
+    </item>
+    <item>
+      <title>School celebrates student art and music festival</title>
+      <link>https://example.org/student-festival</link>
+      <description>Families, teachers, and local groups joined the celebration and supported student creativity.</description>
+    </item>
+    <item>
+      <title>City opens support center with food, job help, and local resources</title>
+      <link>https://example.org/support-center</link>
+      <description>The center connects residents with food support, community programs, and practical next steps.</description>
+    </item>
+  </channel>
+</rss>

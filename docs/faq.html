@@ -4,111 +4,10 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Claude Helper FAQ</title>
-    <style>
-      :root {
-        --bg: #f7f4eb;
-        --card: #fffdf8;
-        --ink: #182022;
-        --muted: #5e696d;
-        --line: #d7cfbf;
-        --accent: #0d7a5f;
-        --accent-soft: #dff4ec;
-      }
-
-      * {
-        box-sizing: border-box;
-      }
-
-      body {
-        margin: 0;
-        font-family: Georgia, "Times New Roman", serif;
-        background:
-          radial-gradient(circle at top left, #fff5d8 0, transparent 26rem),
-          linear-gradient(180deg, #f9f6ef 0%, var(--bg) 100%);
-        color: var(--ink);
-      }
-
-      main {
-        max-width: 900px;
-        margin: 0 auto;
-        padding: 40px 20px 80px;
-      }
-
-      .hero,
-      .card {
-        background: color-mix(in srgb, var(--card) 94%, white 6%);
-        border: 1px solid var(--line);
-        border-radius: 20px;
-        box-shadow: 0 20px 60px rgba(24, 32, 34, 0.08);
-      }
-
-      .hero {
-        padding: 28px;
-        margin-bottom: 20px;
-      }
-
-      h1,
-      h2 {
-        margin-top: 0;
-        font-weight: 700;
-        letter-spacing: 0.02em;
-      }
-
-      h1 {
-        font-size: clamp(2rem, 4vw, 3.2rem);
-        margin-bottom: 8px;
-      }
-
-      p,
-      li {
-        font-size: 1.05rem;
-        line-height: 1.7;
-      }
-
-      .muted {
-        color: var(--muted);
-      }
-
-      .grid {
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-        gap: 16px;
-        margin-bottom: 20px;
-      }
-
-      .card {
-        padding: 22px;
-      }
-
-      a {
-        color: var(--accent);
-      }
-
-      .pill-row {
-        display: flex;
-        flex-wrap: wrap;
-        gap: 10px;
-        margin-top: 18px;
-      }
-
-      .pill {
-        display: inline-block;
-        padding: 10px 14px;
-        border-radius: 999px;
-        text-decoration: none;
-        background: var(--accent-soft);
-        border: 1px solid #badfd1;
-        color: #084937;
-        font-size: 0.95rem;
-      }
-
-      ul {
-        padding-left: 20px;
-      }
-    </style>
+    <link rel="stylesheet" href="../assets/site.css">
   </head>
   <body>
-    <main>
+    <main class="page">
       <section class="hero">
         <h1>Claude Helper FAQ</h1>
         <p class="muted">
@@ -116,15 +15,15 @@
           and coding on a Mac.
         </p>
         <div class="pill-row">
-          <a class="pill" href="../README.md">Open README</a>
+          <a class="pill" href="../index.html">Homepage</a>
+          <a class="pill" href="./first-10-minutes.html">First 10 Minutes</a>
           <a class="pill" href="./common-issues.md">Common Issues</a>
           <a class="pill" href="./folder-paths.md">Folder Paths</a>
-          <a class="pill" href="./positive-ideas.md">Positive Ideas</a>
         </div>
       </section>
 
       <section class="grid">
-        <article class="card">
+        <article class="panel">
           <h2>What is Claude Chat?</h2>
           <p>
             Chat is the easiest place to start. You ask questions, explain what
@@ -132,7 +31,7 @@
           </p>
         </article>
 
-        <article class="card">
+        <article class="panel">
           <h2>What is Cowork?</h2>
           <p>
             Cowork is a more guided way to work through a larger task with AI as
@@ -142,7 +41,7 @@
           <p><a href="https://www.anthropic.com/news/claude-cowork">Learn more</a></p>
         </article>
 
-        <article class="card">
+        <article class="panel">
           <h2>What is Claude Code?</h2>
           <p>
             Claude Code helps inside a real folder on your computer. It can
@@ -151,7 +50,7 @@
           <p><a href="https://docs.claude.com/en/docs/claude-code/overview">Learn more</a></p>
         </article>
 
-        <article class="card">
+        <article class="panel">
           <h2>What is Terminal?</h2>
           <p>
             Terminal is a text window where you can tell your Mac to do things by
@@ -159,7 +58,7 @@
           </p>
         </article>
 
-        <article class="card">
+        <article class="panel">
           <h2>What is a skill?</h2>
           <p>
             A skill is a reusable set of instructions or workflows that helps
@@ -168,7 +67,7 @@
           <p><a href="https://github.com/anthropics/skills">See examples</a></p>
         </article>
 
-        <article class="card">
+        <article class="panel">
           <h2>What is an integration?</h2>
           <p>
             An integration connects Claude to another tool or service so it can
@@ -176,7 +75,7 @@
           </p>
         </article>
 
-        <article class="card">
+        <article class="panel">
           <h2>What is a container?</h2>
           <p>
             A container is a simple way to package an app so it runs the same way
@@ -184,7 +83,7 @@
           </p>
         </article>
 
-        <article class="card">
+        <article class="panel">
           <h2>What is a folder path?</h2>
           <p>
             A folder path is the address of a folder on your Mac. If paths feel
@@ -195,7 +94,7 @@
         </article>
       </section>
 
-      <section class="card">
+      <section class="panel">
         <h2>Good first uses for AI</h2>
         <ul>
           <li>Learn a topic in simple language.</li>

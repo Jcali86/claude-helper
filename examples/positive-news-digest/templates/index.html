@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Positive Local News Digest</title>
+    <style>
+      :root {
+        --bg: #f6efe6;
+        --card: #fffdf9;
+        --ink: #1d2428;
+        --muted: #5b6870;
+        --line: #ddd3c2;
+        --green: #0d7a5f;
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        margin: 0;
+        font-family: Georgia, "Times New Roman", serif;
+        color: var(--ink);
+        background:
+          radial-gradient(circle at top right, #fff1cb 0, transparent 22rem),
+          linear-gradient(180deg, #fbf7ef 0%, var(--bg) 100%);
+      }
+
+      main {
+        max-width: 1080px;
+        margin: 0 auto;
+        padding: 30px 18px 60px;
+      }
+
+      .hero,
+      .card,
+      .story-card {
+        background: var(--card);
+        border: 1px solid var(--line);
+        border-radius: 24px;
+        box-shadow: 0 16px 40px rgba(29, 36, 40, 0.08);
+      }
+
+      .hero,
+      .card {
+        padding: 24px;
+      }
+
+      .grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+        gap: 16px;
+      }
+
+      .story-card {
+        padding: 20px;
+      }
+
+      .story-source {
+        margin: 0 0 8px;
+        color: var(--green);
+        text-transform: uppercase;
+        letter-spacing: 0.05em;
+        font-size: 0.82rem;
+      }
+
+      h1,
+      h2,
+      h3 {
+        margin-top: 0;
+      }
+
+      p,
+      li {
+        line-height: 1.7;
+        font-size: 1.03rem;
+      }
+
+      .muted {
+        color: var(--muted);
+      }
+
+      a {
+        color: var(--green);
+      }
+
+      ul {
+        padding-left: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <section class="hero">
+        <h1>Positive Local News Digest</h1>
+        <p class="muted">Generated at ${generated_at}</p>
+        <p>${summary}</p>
+      </section>
+
+      <section class="grid" style="margin-top: 18px;">
+        <article class="card">
+          <h2>What this demo does</h2>
+          <p>
+            This starter looks at a few news or community feeds, searches for
+            more hopeful community-focused stories, and turns them into a small digest.
+          </p>
+        </article>
+
+        <article class="card">
+          <h2>Notes from this run</h2>
+          <ul>
+            ${notes}
+          </ul>
+        </article>
+      </section>
+
+      <section style="margin-top: 18px;">
+        <h2>Featured stories</h2>
+        <div class="grid">
+          ${story_cards}
+        </div>
+      </section>
+    </main>
+  </body>
+</html>

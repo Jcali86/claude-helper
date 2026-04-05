@@ -1,0 +1,12 @@
+{
+  "sources": [
+    {
+      "name": "NPR News",
+      "url": "https://feeds.npr.org/1001/rss.xml"
+    },
+    {
+      "name": "PBS News",
+      "url": "https://www.pbs.org/newshour/feeds/rss/headlines"
+    }
+  ]
+}
