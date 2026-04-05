@@ -4,7 +4,7 @@ Claude Helper is a beginner-friendly guide for people who are new to AI, Mac app
 
 The goal is simple: help someone go from "I mostly use my phone or browser" to "I can use Claude Chat, Cowork, and Code without feeling like I accidentally joined Computer Camp."
 
-If you learn best by seeing things, this repo includes visual walkthroughs, screenshot-style examples, and plain-English prompts you can actually reuse.
+If you learn best by seeing things, this repo includes visual walkthroughs, real Claude screenshots, and plain-English prompts you can actually reuse.
 
 ## Start In 30 Seconds
 
@@ -84,9 +84,10 @@ These were added for people who learn better by seeing examples:
 
 - visual first-run guide: [docs/first-10-minutes.html](docs/first-10-minutes.html)
 - markdown version for GitHub reading: [docs/first-10-minutes.md](docs/first-10-minutes.md)
-- screenshot-style Claude Chat example: [assets/visuals/chat-starter.svg](assets/visuals/chat-starter.svg)
-- screenshot-style Claude Cowork example: [assets/visuals/cowork-planner.svg](assets/visuals/cowork-planner.svg)
-- screenshot-style Claude Code example: [assets/visuals/code-helper.svg](assets/visuals/code-helper.svg)
+- real Claude Chat screenshots page: [docs/chat-examples.html](docs/chat-examples.html)
+- real Claude Cowork screenshots page: [docs/cowork-examples.html](docs/cowork-examples.html)
+- real Claude Code screenshots page: [docs/code-examples.html](docs/code-examples.html)
+- setup and customization screenshots page: [docs/setup-examples.html](docs/setup-examples.html)
 
 ## What Is In This Repo
 

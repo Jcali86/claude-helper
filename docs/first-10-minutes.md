@@ -29,7 +29,11 @@ practical, and not overly technical.
 
 Visual example:
 
-![Simulated Claude Chat screen](../assets/visuals/chat-starter.svg)
+![Real Claude Chat screenshot](../assets/screenshots/chat/chat-home-first-app-prompt.png)
+
+More real Chat screenshots:
+
+- [docs/chat-examples.html](chat-examples.html)
 
 Why this works:
 
@@ -51,7 +55,11 @@ not pretend productivity superhero stuff.
 
 Visual example:
 
-![Simulated Claude Cowork screen](../assets/visuals/cowork-planner.svg)
+![Real Claude Cowork screenshot](../assets/screenshots/cowork/cowork-task-ready.png)
+
+More real Cowork screenshots:
+
+- [docs/cowork-examples.html](cowork-examples.html)
 
 Good uses for Cowork:
 
@@ -88,7 +96,11 @@ shows me a clean summary.
 
 Visual example:
 
-![Simulated Claude Code screen](../assets/visuals/code-helper.svg)
+![Real Claude Code screenshot](../assets/screenshots/code/code-repo-ready.png)
+
+More real Code screenshots:
+
+- [docs/code-examples.html](code-examples.html)
 
 Good uses for Code:
 
@@ -129,4 +141,4 @@ That one small habit makes the answers way more useful.
 
 ## If You Want To Add Real Screenshots Later
 
-The visuals in this guide are custom mockups based on a real Claude screen layout. You can later swap them for real screenshots from the Mac app while keeping the same guide structure.
+This guide now uses real screenshots from the Claude Mac app. If you take better or newer screenshots later, you can swap them in while keeping the same guide structure.

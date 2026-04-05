@@ -1,29 +1,9 @@
 # Visual Assets Guide
 
-These SVG files are starter mockups for the Claude Helper guides.
+These SVG files are older mockups kept as backup reference artwork.
 
-You can replace them later with real screenshots from the Claude Mac app if you want a more realistic walkthrough.
+The active guides now use real screenshots from the Claude Mac app in:
 
-## Current Files
+- `assets/screenshots/`
 
-- `chat-starter.svg`
-- `cowork-planner.svg`
-- `code-helper.svg`
-
-## If You Replace Them
-
-Try to keep the same filenames so the existing pages keep working without extra edits.
-
-Good habits:
-
-- crop the app window cleanly
-- avoid including personal information
-- keep text readable at smaller sizes
-- use one screenshot per teaching point
-
-## Where These Are Used
-
-- `README.md`
-- `index.html`
-- `docs/first-10-minutes.md`
-- `docs/first-10-minutes.html`
+If you are updating the public walkthroughs, prefer the real screenshots first.
