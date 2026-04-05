@@ -12,7 +12,21 @@ This README is the repo-facing version.
 
 If you are reading this on GitHub, start with the guides below.
 
-If you want the learner-friendly website version, open [index.html](index.html) or the published Pages site when the repo is public again.
+If you want the learner-friendly website version, use the GitHub Pages site when the repo is public:
+
+- homepage: [Claude Helper website](https://jcali86.github.io/claude-helper/)
+- first 10 minutes: [visual guide](https://jcali86.github.io/claude-helper/docs/first-10-minutes.html)
+- mode guide: [chat, cowork, and code](https://jcali86.github.io/claude-helper/docs/chat-code-cowork.html)
+- common issues: [help page](https://jcali86.github.io/claude-helper/docs/common-issues.html)
+- folder paths: [Mac path guide](https://jcali86.github.io/claude-helper/docs/folder-paths.html)
+
+If the repo is still private, install it locally first and open these local files after install:
+
+- `index.html`
+- `docs/first-10-minutes.html`
+- `docs/chat-code-cowork.html`
+- `docs/common-issues.html`
+- `docs/folder-paths.html`
 
 ## Start Here If You Are New
 
@@ -75,25 +89,37 @@ I am new to this. Before we change anything, please tell me what folder and file
 
 ## Visual Walkthroughs
 
-These were added for people who learn better by seeing examples:
+These were added for people who learn better by seeing examples.
 
-- learner-friendly homepage: [index.html](index.html)
-- visual first-run guide: [docs/first-10-minutes.html](docs/first-10-minutes.html)
+Public Pages links to use when the repo is public:
+
+- learner-friendly homepage: [Claude Helper website](https://jcali86.github.io/claude-helper/)
+- visual first-run guide: [First 10 Minutes](https://jcali86.github.io/claude-helper/docs/first-10-minutes.html)
+- browser-friendly modes guide: [Chat, Cowork, and Code](https://jcali86.github.io/claude-helper/docs/chat-code-cowork.html)
+- browser-friendly common issues guide: [Common Issues](https://jcali86.github.io/claude-helper/docs/common-issues.html)
+- browser-friendly folder paths guide: [Folder Paths](https://jcali86.github.io/claude-helper/docs/folder-paths.html)
+- browser-friendly example app guide: [Positive News Example](https://jcali86.github.io/claude-helper/docs/positive-news-example.html)
+- real Claude Chat screenshots page: [Chat examples](https://jcali86.github.io/claude-helper/docs/chat-examples.html)
+- real Claude Cowork screenshots page: [Cowork examples](https://jcali86.github.io/claude-helper/docs/cowork-examples.html)
+- real Claude Code screenshots page: [Code examples](https://jcali86.github.io/claude-helper/docs/code-examples.html)
+- setup and customization screenshots page: [Setup examples](https://jcali86.github.io/claude-helper/docs/setup-examples.html)
+
+Local HTML files to open after install:
+
+- local homepage: `index.html`
+- local first-run guide: `docs/first-10-minutes.html`
 - markdown version for GitHub reading: [docs/first-10-minutes.md](docs/first-10-minutes.md)
-- browser-friendly modes guide: [docs/chat-code-cowork.html](docs/chat-code-cowork.html)
-- browser-friendly common issues guide: [docs/common-issues.html](docs/common-issues.html)
-- browser-friendly folder paths guide: [docs/folder-paths.html](docs/folder-paths.html)
-- browser-friendly example app guide: [docs/positive-news-example.html](docs/positive-news-example.html)
-- real Claude Chat screenshots page: [docs/chat-examples.html](docs/chat-examples.html)
-- real Claude Cowork screenshots page: [docs/cowork-examples.html](docs/cowork-examples.html)
-- real Claude Code screenshots page: [docs/code-examples.html](docs/code-examples.html)
-- setup and customization screenshots page: [docs/setup-examples.html](docs/setup-examples.html)
+- local modes guide: `docs/chat-code-cowork.html`
+- local common issues guide: `docs/common-issues.html`
+- local folder paths guide: `docs/folder-paths.html`
+- local example app guide: `docs/positive-news-example.html`
+- local screenshot pages: `docs/chat-examples.html`, `docs/cowork-examples.html`, `docs/code-examples.html`, `docs/setup-examples.html`
 
 ## What Is In This Repo
 
-- beginner homepage for sharing with others: [index.html](index.html)
+- beginner homepage for local installs: `index.html`
 - simple setup script: [setup.sh](setup.sh)
-- visual FAQ page: [docs/faq.html](docs/faq.html)
+- visual FAQ page for local installs: `docs/faq.html`
 - beginner mode guide: [docs/chat-code-cowork.md](docs/chat-code-cowork.md)
 - visual first 10 minutes guide: [docs/first-10-minutes.md](docs/first-10-minutes.md)
 - common setup fixes: [docs/common-issues.md](docs/common-issues.md)
@@ -124,7 +150,9 @@ The repo now includes a real starter for a "positive local news digest" app:
 - it can run locally with Python
 - it includes a Dockerfile for later container use
 
-Open the learner-friendly guide here: [docs/positive-news-example.html](docs/positive-news-example.html)
+Public guide when the repo is public: [Positive News Example](https://jcali86.github.io/claude-helper/docs/positive-news-example.html)
+
+Local guide after install: `docs/positive-news-example.html`
 
 Open the repo project here: [examples/positive-news-digest/README.md](examples/positive-news-digest/README.md)
 
@@ -143,7 +171,7 @@ bash <(curl -fsSL https://raw.githubusercontent.com/Jcali86/claude-helper/main/s
 What it does:
 
 - downloads or updates the repo into `~/Documents/Claude-Helper`
-- opens the main beginner pages
+- opens the homepage first
 - opens the project folder in Finder
 
 ## If You Get Stuck
@@ -152,7 +180,7 @@ Start with:
 
 - [docs/common-issues.md](docs/common-issues.md)
 - [docs/folder-paths.md](docs/folder-paths.md)
-- [docs/faq.html](docs/faq.html)
+- local FAQ after install: `docs/faq.html`
 
 ## Notes
 
