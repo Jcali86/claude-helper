@@ -44,6 +44,12 @@ Examples:
 
 Think of `Code` like bringing Claude into a real folder on your computer so it can help with files, commands, and projects.
 
+Before you use `Code`, open the project folder you want help with.
+
+That is what gives Claude the context for the files, folders, and app you are talking about.
+
+You do not need a special Skill or integration for normal beginner steps.
+
 Use it for:
 
 - building apps
@@ -59,6 +65,10 @@ Examples:
 - "Why did this install fail?"
 - "Explain this error in plain English."
 - "Create a starter website for my project."
+
+Good first line if you are unsure:
+
+- "Before we start, tell me what folder and files you can currently see."
 
 ## Which One Should I Pick?
 

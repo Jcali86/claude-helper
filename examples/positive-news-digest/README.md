@@ -53,16 +53,41 @@ Do not use the same prompt for every job.
 
 If you want Claude Code to be genuinely useful here, pick the prompt that matches what you want to do.
 
+## Before You Paste A Prompt Into Claude Code
+
+Claude Code is most useful when it is opened in the same folder as this project.
+
+In very plain English, that means:
+
+1. Open Claude Code.
+2. Open the `positive-news-digest` folder in Claude Code.
+3. Then paste one of the prompts below.
+
+Why this matters:
+
+- Claude Code can read the files in the folder you opened
+- that gives it the context for `app.py`, `data/sources.json`, and the rest of the project
+- you do not need to explain every filename by hand if Claude Code is already inside the right folder
+
+You do not need a special Skill or integration just to use these prompts.
+
+If Claude Code is not opened in this project folder yet, say this first:
+
+```text
+I am new to this. Please help me make sure you are looking at the positive-news-digest project folder before we change anything.
+```
+
 ### 1. Learn This App
 
 Use this first if you want to understand the starter before changing anything.
 
 ```text
-Please explain this project in plain language.
+You are looking at the positive-news-digest project folder.
+Please explain this app in plain language.
 Walk me through what each file does, how the app works right now,
 and where the current limits are.
 Assume I am new to Terminal and beginner coding projects.
-If there is any part that is easy to misunderstand, slow down and explain it clearly.
+If any part is easy to misunderstand, slow down and explain it clearly.
 ```
 
 ### 2. Improve This App Safely
@@ -70,7 +95,8 @@ If there is any part that is easy to misunderstand, slow down and explain it cle
 Use this when you want Claude to review the current starter and make one sensible improvement at a time.
 
 ```text
-Please review this project and suggest the next best small improvement.
+You are looking at the positive-news-digest project folder.
+Please review this app and suggest the next best small improvement.
 Explain the tradeoffs in plain English before changing anything.
 Then implement only one improvement at a time, test it, and summarize what changed.
 If there is a safer or simpler way to do something, tell me before making the change.
@@ -81,7 +107,8 @@ If there is a safer or simpler way to do something, tell me before making the ch
 Use this when you want Claude Code to turn the starter into a more complete local app instead of just explaining what is already here.
 
 ```text
-Please turn this starter into a more complete local app.
+You are looking at the positive-news-digest project folder.
+Please turn this app into a more complete local app.
 Keep it local-first and explain each step in plain English.
 Work in phases instead of trying to do everything at once.
 Pause at the end of each phase, summarize what changed, and tell me the next safe step.
@@ -98,6 +125,12 @@ Phase 2:
 
 Phase 3:
 - send the digest by email
+```
+
+If you want to be extra clear, you can add this line at the end:
+
+```text
+Before you start coding, quickly tell me what files you found in this folder and what you plan to change first.
 ```
 
 ## Suggested Improvement Roadmap

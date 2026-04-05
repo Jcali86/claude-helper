@@ -56,6 +56,28 @@ Use this when you want Claude to help inside a real folder on your Mac, explain 
 
 More detail: [docs/chat-code-cowork.md](docs/chat-code-cowork.md)
 
+## One Important Thing Before You Use Claude Code
+
+Claude Code is not reading your whole computer by magic.
+
+It works best when you open the right project folder first.
+
+In plain English:
+
+1. Open Claude Code.
+2. Open the folder for the project you want help with.
+3. Then paste your prompt.
+
+That gives Claude Code the file context it needs.
+
+You do not need a special Skill or integration for basic beginner use.
+
+If you are not sure whether Claude Code is looking at the right folder, say:
+
+```text
+I am new to this. Before we change anything, please tell me what folder and files you can currently see.
+```
+
 ## Visual Walkthroughs
 
 These were added for people who learn better by seeing examples:

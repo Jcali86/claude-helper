@@ -59,6 +59,16 @@ Open the project folder, then open these files first:
 - [docs/faq.html](faq.html)
 - [docs/chat-code-cowork.md](chat-code-cowork.md)
 
+## Claude seems confused about what project I mean
+
+This usually means Claude Code is not looking at the right folder yet.
+
+Try:
+
+- open the project folder first in Claude Code
+- ask: `Before we start, please tell me what folder and files you can currently see.`
+- if the folder is wrong, open the correct one and ask again
+
 ## I do not know where my files are on a Mac
 
 That is normal if you usually work in a browser or on a phone.

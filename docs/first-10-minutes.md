@@ -64,9 +64,22 @@ Good uses for Cowork:
 
 Use `Code` when Claude is helping inside a real folder or project.
 
+One important thing first:
+
+- open the project folder in Claude Code before you paste a Code prompt
+- that is how Claude knows which files and app you mean
+- you do not need a special Skill or integration for a basic beginner project
+
+If you are unsure whether Claude is looking at the right place, say:
+
+```text
+Before we start, please tell me what folder and files you can currently see.
+```
+
 Try a prompt like this:
 
 ```text
+You are looking at my current project folder.
 I am new to Terminal and coding projects, so please explain every step
 in plain English before we do it.
 Help me build a very simple app that pulls in positive local news and
