@@ -12,7 +12,7 @@ This README is the repo-facing version.
 
 If you are reading this on GitHub, start with the guides below.
 
-If you want the learner-friendly website version, use the GitHub Pages site when the repo is public:
+If you want the learner-friendly website version, use the GitHub Pages site
 
 - homepage: [Claude Helper website](https://jcali86.github.io/claude-helper/)
 - first 10 minutes: [visual guide](https://jcali86.github.io/claude-helper/docs/first-10-minutes.html)
@@ -20,7 +20,7 @@ If you want the learner-friendly website version, use the GitHub Pages site when
 - common issues: [help page](https://jcali86.github.io/claude-helper/docs/common-issues.html)
 - folder paths: [Mac path guide](https://jcali86.github.io/claude-helper/docs/folder-paths.html)
 
-If the repo is still private, install it locally first and open these local files after install:
+If the repo is private, install it locally first and open these local files after install:
 
 - `index.html`
 - `docs/first-10-minutes.html`
