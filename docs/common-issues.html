@@ -7,132 +7,129 @@
     <link rel="stylesheet" href="../assets/site.css">
   </head>
   <body>
+    <nav class="site-nav">
+      <a href="../index.html">Home</a>
+      <a href="./get-claude.html">Get Claude</a>
+      <a href="./chat-code-cowork.html">Mode Guide</a>
+      <a href="./first-10-minutes.html">First 10 Minutes</a>
+      <span class="nav-here">Common Issues</span>
+    </nav>
     <main class="page">
       <section class="hero">
         <span class="eyebrow">Help Page</span>
-        <h1>Common issues, explained simply</h1>
-        <p class="muted">
+        <h1>Something not working? Start here.</h1>
+        <p>
           If something does not work the first time, that does not mean you broke anything.
-          Start here, fix one thing at a time, and keep the explanation simple.
+          Find the problem that sounds like yours, try one fix, and move on.
         </p>
-        <div class="button-row">
-          <a class="button primary" href="../index.html">Back to Start Here</a>
-          <a class="button secondary" href="./folder-paths.html">Folder Paths</a>
-          <a class="button secondary" href="./faq.html">FAQ</a>
+      </section>
+
+      <section class="section-block">
+        <h2>Chat and beginner issues</h2>
+        <div class="stack">
+          <article class="panel">
+            <h3>Claude is not answering the way I expected</h3>
+            <p>
+              That happens. Try rephrasing your message with more detail about what you actually want.
+            </p>
+            <p>A good formula:</p>
+            <div class="code-block">I want [specific result]. I am [your experience level]. Please keep it [simple / step by step / short].</div>
+            <p class="muted">
+              The more Claude knows about what you need, the better the answer gets.
+            </p>
+          </article>
+
+          <article class="panel">
+            <h3>I do not know which tab to use</h3>
+            <p>
+              Start with Chat. It is the simplest and works for most beginner tasks.
+              Cowork and Code are for later, when you have a bigger task or a real project folder.
+            </p>
+            <p><a href="./chat-code-cowork.html">Open the mode guide</a></p>
+          </article>
+
+          <article class="panel">
+            <h3>I do not know where my files are</h3>
+            <p>
+              That is normal if you mostly use your phone, browser, or apps that hide the file system.
+              Finder plus drag-and-drop is the easiest way to get the right folder path into Terminal.
+            </p>
+            <p><a href="./folder-paths.html">Learn folder paths</a></p>
+          </article>
         </div>
       </section>
 
-      <section class="grid" style="margin-top: 20px;">
-        <article class="panel">
-          <h2>This page is for</h2>
-          <p>
-            Moments when something feels off, confusing, or more technical than you expected.
-          </p>
-        </article>
+      <section class="section-block">
+        <h2>Project and Terminal issues</h2>
+        <div class="stack">
+          <article class="panel">
+            <h3>Claude seems confused about the project</h3>
+            <p>
+              This usually means Claude Code is not looking at the right folder yet.
+              Claude Code can read the files in the folder you opened. It cannot guess the right project if the wrong folder is open.
+            </p>
+            <p>Try this prompt first:</p>
+            <div class="code-block">Before we start, please tell me what folder and files you can currently see.</div>
+          </article>
 
-        <article class="panel">
-          <h2>Do this now</h2>
-          <p>
-            Find the problem that sounds closest to yours and try only that fix first.
-          </p>
-        </article>
+          <article class="panel">
+            <h3>"Operation not permitted"</h3>
+            <p>
+              This usually means macOS is blocking access until you approve it.
+            </p>
+            <ul class="mini-list">
+              <li>Look for a permission popup behind another window.</li>
+              <li>Open System Settings, then Privacy &amp; Security.</li>
+              <li>Allow access if Terminal or your coding app is listed.</li>
+              <li>Run the command again.</li>
+            </ul>
+          </article>
 
-        <article class="panel">
-          <h2>You can ignore this for now</h2>
-          <p>
-            If you are still just opening Claude and using Chat, you can skip anything here about Git, folders, or Terminal until it actually appears.
-          </p>
-        </article>
+          <article class="panel">
+            <h3>"git: command not found"</h3>
+            <p>
+              Git is one of the basic tools many coding projects use. You only need this if a project asks for it.
+            </p>
+            <p>Try this command in Terminal:</p>
+            <div class="code-block">xcode-select --install</div>
+            <p class="muted">
+              When the install finishes, close Terminal, open it again, and try the command one more time.
+            </p>
+          </article>
 
-        <article class="panel">
-          <h2>What success looks like</h2>
-          <p>
-            One confusing problem becomes clear enough that you know the next safe step.
-          </p>
-        </article>
+          <article class="panel">
+            <h3>"No such file or directory"</h3>
+            <p>
+              This usually means the folder path is wrong.
+              Open the folder guide — it shows the easiest beginner method for getting the right path.
+            </p>
+            <p><a href="./folder-paths.html">Open Folder Paths</a></p>
+          </article>
+
+          <article class="panel">
+            <h3>A pasted command looks weird</h3>
+            <p>
+              Sometimes smart quotes or hidden formatting break a Terminal command.
+            </p>
+            <ul class="mini-list">
+              <li>Copy the command again from the guide.</li>
+              <li>Make sure the quotes are normal, like "this".</li>
+              <li>Paste into Terminal directly, not into Notes first.</li>
+            </ul>
+          </article>
+        </div>
       </section>
 
-      <section class="grid">
-        <article class="panel">
-          <h2>"Operation not permitted"</h2>
-          <p>
-            This usually means macOS is blocking access until you approve it.
-          </p>
-          <ul class="mini-list">
-            <li>Look for a permission popup behind another window.</li>
-            <li>Open <code>System Settings &gt; Privacy &amp; Security</code>.</li>
-            <li>Allow access if Terminal or your coding app is listed.</li>
-            <li>Run the command again.</li>
-          </ul>
-        </article>
-
-        <article class="panel">
-          <h2>"git: command not found"</h2>
-          <p>
-            Git is one of the basic tools many coding projects use.
-          </p>
-          <p>Try this command in Terminal:</p>
-          <div class="code-block">xcode-select --install</div>
-          <p class="muted">
-            When the install finishes, close Terminal, open it again, and try the command one more time.
-          </p>
-        </article>
-
-        <article class="panel">
-          <h2>"No such file or directory"</h2>
-          <p>
-            This usually means the folder path is wrong.
-          </p>
-          <p>
-            Open the folder guide next. It shows the easiest beginner method for getting the right path onto the screen.
-          </p>
-          <p><a href="./folder-paths.html">Open Folder Paths</a></p>
-        </article>
-
-        <article class="panel">
-          <h2>A pasted command looks weird</h2>
-          <p>
-            Sometimes smart quotes or hidden formatting break a Terminal command.
-          </p>
-          <ul class="mini-list">
-            <li>Copy the command again from the guide.</li>
-            <li>Make sure the quotes are normal, like <code>"this"</code>.</li>
-            <li>Paste into Terminal directly, not into Notes first.</li>
-          </ul>
-        </article>
-
-        <article class="panel">
-          <h2>Claude seems confused about the project</h2>
-          <p>
-            This usually means Claude Code is not looking at the right folder yet.
-          </p>
-          <p>
-            Claude Code can read the files in the folder you opened. It cannot guess the right project if the wrong folder is open.
-          </p>
-          <p>Try this prompt first:</p>
-          <div class="code-block">Before we start, please tell me what folder and files you can currently see.</div>
-        </article>
-
-        <article class="panel">
-          <h2>I do not know where my files are</h2>
-          <p>
-            That is normal if you mostly use your phone, browser, or apps that hide the file system.
-          </p>
-          <p>
-            Finder plus drag-and-drop is the easiest way to get the right folder path into Terminal.
-          </p>
-          <p><a href="./folder-paths.html">Learn folder paths</a></p>
-        </article>
-      </section>
-
-      <section class="panel" style="margin-top: 20px;">
+      <section class="section-block">
         <h2>Good safety habits</h2>
-        <ul class="mini-list">
-          <li>Ask Claude to explain a command before you run it.</li>
-          <li>Keep copies of important files before big changes.</li>
-          <li>Do not share passwords or sensitive personal information.</li>
-          <li>Slow down when something feels unclear instead of guessing.</li>
-        </ul>
+        <div class="panel panel-muted">
+          <ul class="mini-list">
+            <li>Ask Claude to explain a command before you run it.</li>
+            <li>Keep copies of important files before big changes.</li>
+            <li>Do not share passwords or sensitive personal information.</li>
+            <li>Slow down when something feels unclear instead of guessing.</li>
+          </ul>
+        </div>
       </section>
     </main>
   </body>

@@ -7,57 +7,34 @@
     <link rel="stylesheet" href="../assets/site.css">
   </head>
   <body>
+    <nav class="site-nav">
+      <a href="../index.html">Home</a>
+      <a href="./get-claude.html">Get Claude</a>
+      <span class="nav-here">Mode Guide</span>
+      <a href="./first-10-minutes.html">First 10 Minutes</a>
+      <a href="./common-issues.html">Common Issues</a>
+    </nav>
     <main class="page">
       <section class="hero">
         <span class="eyebrow">Step 2</span>
-        <h1>Learn the three Claude tabs in plain English.</h1>
-        <p class="muted">
-          You do not need to memorize everything. You just need one calm rule:
-          start with Chat, then learn the others later.
+        <h1>Three tabs. One easy rule.</h1>
+        <p>
+          You do not need to memorize everything. Just remember this:
+          start with Chat. The other two can wait until you actually need them.
         </p>
         <div class="button-row">
           <a class="button primary" href="./first-10-minutes.html">Next: First 10 Minutes</a>
           <a class="button secondary" href="./get-claude.html">Back to Get Claude</a>
-          <a class="button secondary" href="./common-issues.html">Common Issues</a>
         </div>
       </section>
 
-      <section class="grid">
-        <article class="panel">
-          <h2>This page is for</h2>
-          <p>
-            People who can already open Claude and want to know which tab to use without guessing.
-          </p>
-        </article>
-
-        <article class="panel">
-          <h2>Do this now</h2>
-          <p>
-            Start with <strong>Chat</strong>. It has the fewest moving parts and is the easiest place to build confidence.
-          </p>
-        </article>
-
-        <article class="panel">
-          <h2>You can ignore this for now</h2>
-          <p>
-            Cowork, Code, skills, connectors, plugins, Terminal, and folders can all wait until later.
-          </p>
-        </article>
-
-        <article class="panel">
-          <h2>What success looks like</h2>
-          <p>
-            You know which tab to choose next without feeling like you have to understand every advanced feature.
-          </p>
-        </article>
-      </section>
-
-      <section class="three-up" style="margin-top: 20px;">
-        <article class="panel" id="chat">
-          <span class="eyebrow">Chat</span>
-          <h2>Start here</h2>
+      <section class="section-block">
+        <div class="panel panel-accent">
+          <span class="eyebrow eyebrow-light">Start here</span>
+          <h2>Chat</h2>
           <p>
             Use Chat when you want to ask, learn, plan, write, or talk through an idea in normal language.
+            This is the safest place to start if you are still building confidence.
           </p>
           <ul class="mini-list">
             <li>Ask questions</li>
@@ -70,11 +47,13 @@
           <div class="code-block">I am new to this.
 Please explain what you can help me with in simple language,
 then give me three good first things to try.</div>
-          <p><a href="./chat-examples.html">Open real Chat screenshots</a></p>
-        </article>
+          <p style="margin-bottom: 0;"><a href="./chat-examples.html">See real Chat screenshots</a></p>
+        </div>
+      </section>
 
-        <article class="panel" id="cowork">
-          <span class="eyebrow">Optional Later</span>
+      <section class="section-block">
+        <div class="panel">
+          <span class="eyebrow eyebrow-light">Optional later</span>
           <h2>Cowork is for bigger tasks</h2>
           <p>
             Use Cowork when the task has many parts and you want a guided partner to help you move through it.
@@ -87,17 +66,18 @@ then give me three good first things to try.</div>
             <li>Compare options before spending time or money</li>
             <li>Organize a task that feels like a lot</li>
             <li>Work through something over time</li>
-            <li>Use connectors or skills later, if you actually need them</li>
           </ul>
           <p>Starter prompt:</p>
           <div class="code-block">Help me turn this into a simple plan.
 I want small steps, plain English, and a clear next action.
 If there is anything I do not need yet, tell me that too.</div>
-          <p><a href="./cowork-examples.html">Open real Cowork screenshots</a></p>
-        </article>
+          <p style="margin-bottom: 0;"><a href="./cowork-examples.html">See real Cowork screenshots</a></p>
+        </div>
+      </section>
 
-        <article class="panel" id="code">
-          <span class="eyebrow">Only For Bigger Projects</span>
+      <section class="section-block">
+        <div class="panel">
+          <span class="eyebrow eyebrow-light">Only for bigger projects</span>
           <h2>Code is for files and projects</h2>
           <p>
             Use Code when Claude is helping inside a real folder on your Mac. This is the mode for files, commands, setup, and building projects.
@@ -115,43 +95,41 @@ If there is anything I do not need yet, tell me that too.</div>
           <p>Starter prompt:</p>
           <div class="code-block">Before we change anything, please tell me what folder and files you can currently see.
 I am new to Terminal and want each step explained in plain English.</div>
-          <p><a href="./code-examples.html">Open real Code screenshots</a></p>
-        </article>
+          <p style="margin-bottom: 0;"><a href="./code-examples.html">See real Code screenshots</a></p>
+        </div>
       </section>
 
-      <section class="split" style="margin-top: 20px;">
-        <article class="panel">
-          <h2>Important before you use Code</h2>
-          <p>
-            Claude Code can read the files in the folder you opened.
-          </p>
-          <p>
-            It cannot guess the right project if the wrong folder is open.
-          </p>
-          <p>
-            Open the project folder first, then paste your prompt.
-          </p>
-        </article>
-
-        <article class="panel">
-          <h2>Do you need skills or integrations?</h2>
-          <p>
-            Usually, no. Most beginners do not need a skill or integration to ask questions or start a simple project.
-          </p>
-          <p>
-            Start simple first. Add extra tools only when you know why you need them.
-          </p>
-          <p><a href="./setup-examples.html">See what skills and connectors look like</a></p>
-        </article>
-      </section>
-
-      <section class="panel" style="margin-top: 20px;">
+      <section class="section-block">
         <h2>Quick way to choose</h2>
-        <ul class="mini-list">
-          <li>Pick <strong>Chat</strong> when you want conversation, explanation, or planning.</li>
-          <li>Pick <strong>Cowork</strong> later when the task is bigger and you want more structure.</li>
-          <li>Pick <strong>Code</strong> later when the task involves files, folders, Terminal, or a real project.</li>
-        </ul>
+        <div class="panel panel-muted">
+          <ul class="mini-list">
+            <li>Pick <strong>Chat</strong> when you want conversation, explanation, or planning.</li>
+            <li>Pick <strong>Cowork</strong> later when the task is bigger and you want more structure.</li>
+            <li>Pick <strong>Code</strong> later when the task involves files, folders, Terminal, or a real project.</li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="section-block">
+        <div class="split">
+          <article class="panel">
+            <h2>Important before you use Code</h2>
+            <p>
+              Claude Code can read the files in the folder you opened.
+              It cannot guess the right project if the wrong folder is open.
+              Open the project folder first, then paste your prompt.
+            </p>
+          </article>
+
+          <article class="panel">
+            <h2>Do you need skills or integrations?</h2>
+            <p>
+              Usually, no. Most beginners do not need a skill or integration to ask questions or start a simple project.
+              Start simple first. Add extra tools only when you know why you need them.
+            </p>
+            <p style="margin-bottom: 0;"><a href="./setup-examples.html">See what skills and connectors look like</a></p>
+          </article>
+        </div>
       </section>
     </main>
   </body>

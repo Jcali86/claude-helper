@@ -1,15 +1,18 @@
 :root {
-  --bg: #f5efe5;
-  --paper: #fffdf9;
-  --paper-2: #fbf7ef;
-  --ink: #182126;
-  --muted: #5d6a71;
-  --line: #dbd2c3;
+  --bg: #f4f1ec;
+  --paper: #ffffff;
+  --ink: #1a2024;
+  --ink-soft: #3a464d;
+  --muted: #6b7780;
+  --line: #d4cfc7;
   --green: #0d7a5f;
   --green-dark: #084e3d;
-  --green-soft: #dff5ec;
-  --gold: #f3d9a3;
-  --shadow: 0 18px 50px rgba(24, 33, 38, 0.1);
+  --green-soft: #e3f5ed;
+  --green-bg: #0d7a5f;
+  --blue-soft: #e8f0fa;
+  --gold-soft: #fdf4e0;
+  --shadow-sm: 0 2px 8px rgba(24, 33, 38, 0.06);
+  --shadow: 0 8px 30px rgba(24, 33, 38, 0.08);
 }
 
 * {
@@ -22,12 +25,9 @@ html {
 
 body {
   margin: 0;
-  font-family: Georgia, "Times New Roman", serif;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
   color: var(--ink);
-  background:
-    radial-gradient(circle at top left, #fff4d6 0, transparent 24rem),
-    radial-gradient(circle at bottom right, #dff4ec 0, transparent 24rem),
-    linear-gradient(180deg, #f8f3ea 0%, var(--bg) 100%);
+  background: var(--bg);
 }
 
 a {
@@ -40,30 +40,33 @@ img {
 }
 
 .page {
-  max-width: 1120px;
+  max-width: 860px;
   margin: 0 auto;
-  padding: 28px 18px 72px;
+  padding: 0 20px 72px;
 }
 
-.hero,
-.panel,
-.screen,
-.nav-card {
-  background: color-mix(in srgb, var(--paper) 95%, white 5%);
-  border: 1px solid var(--line);
-  border-radius: 24px;
-  box-shadow: var(--shadow);
-}
+/* ── Hero ────────────────────────────── */
 
 .hero {
-  padding: 34px;
-  margin-bottom: 20px;
+  background: var(--green-bg);
+  color: white;
+  padding: 44px 36px;
+  border-radius: 20px;
+  margin-bottom: 32px;
+}
+
+.hero a {
+  color: #b4ead6;
+}
+
+.hero .muted {
+  color: #c0ddd2;
 }
 
 .hero-split {
   display: grid;
-  grid-template-columns: minmax(0, 1.15fr) minmax(300px, 0.85fr);
-  gap: 22px;
+  grid-template-columns: 1.2fr 0.8fr;
+  gap: 28px;
   align-items: center;
 }
 
@@ -78,33 +81,48 @@ img {
 .eyebrow {
   display: inline-block;
   margin-bottom: 12px;
-  padding: 7px 12px;
+  padding: 6px 12px;
   border-radius: 999px;
-  font-size: 0.84rem;
-  letter-spacing: 0.06em;
+  font-size: 0.82rem;
+  font-weight: 600;
+  letter-spacing: 0.05em;
   text-transform: uppercase;
+}
+
+.hero .eyebrow {
+  background: rgba(255, 255, 255, 0.18);
+  color: #d4f5e6;
+}
+
+.eyebrow-light {
   background: var(--green-soft);
   color: var(--green-dark);
 }
 
-h1,
-h2,
-h3 {
+/* ── Typography ──────────────────────── */
+
+h1, h2, h3 {
   margin-top: 0;
-  line-height: 1.1;
+  line-height: 1.15;
 }
 
 h1 {
-  font-size: clamp(2.4rem, 5vw, 4.4rem);
-  margin-bottom: 10px;
+  font-size: clamp(2rem, 4.5vw, 3.2rem);
+  margin-bottom: 12px;
+  font-weight: 700;
 }
 
 h2 {
-  font-size: clamp(1.6rem, 3vw, 2.4rem);
+  font-size: clamp(1.4rem, 2.5vw, 1.9rem);
+  font-weight: 700;
 }
 
-p,
-li {
+h3 {
+  font-size: 1.15rem;
+  font-weight: 600;
+}
+
+p, li {
   font-size: 1.04rem;
   line-height: 1.7;
 }
@@ -113,37 +131,93 @@ li {
   color: var(--muted);
 }
 
-.button-row,
-.pill-row {
+/* ── Buttons ─────────────────────────── */
+
+.button-row {
   display: flex;
   flex-wrap: wrap;
   gap: 12px;
 }
 
-.button,
-.pill {
+.button {
   display: inline-flex;
   align-items: center;
   justify-content: center;
   min-height: 44px;
-  padding: 12px 16px;
-  border-radius: 999px;
+  padding: 12px 20px;
+  border-radius: 12px;
   text-decoration: none;
   font-size: 0.98rem;
-  border: 1px solid transparent;
+  font-weight: 600;
+  border: none;
+  transition: opacity 0.15s;
+}
+
+.button:hover {
+  opacity: 0.88;
 }
 
 .button.primary {
+  background: white;
+  color: var(--green-dark);
+}
+
+.hero .button.primary {
+  background: white;
+  color: var(--green-dark);
+}
+
+.button.secondary {
+  background: rgba(255, 255, 255, 0.15);
+  color: white;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+/* Outside hero, secondary buttons need different colors */
+.panel .button.primary,
+section:not(.hero) > .button-row .button.primary {
   background: var(--green);
   color: white;
 }
 
-.button.secondary,
-.pill {
-  background: var(--paper-2);
+section:not(.hero) > .button-row .button.secondary,
+.panel .button.secondary {
+  background: var(--paper);
   color: var(--ink);
-  border-color: var(--line);
+  border: 1px solid var(--line);
 }
+
+/* ── Panels & Cards ──────────────────── */
+
+.panel {
+  background: var(--paper);
+  border: 1px solid var(--line);
+  border-radius: 16px;
+  padding: 28px;
+  box-shadow: var(--shadow-sm);
+}
+
+.panel-accent {
+  border-left: 4px solid var(--green);
+}
+
+.panel-muted {
+  background: var(--bg);
+  border-color: transparent;
+  box-shadow: none;
+}
+
+/* ── Section blocks ──────────────────── */
+
+.section-block {
+  margin-bottom: 28px;
+}
+
+.section-block h2 {
+  margin-bottom: 16px;
+}
+
+/* ── Layouts ─────────────────────────── */
 
 .grid {
   display: grid;
@@ -159,19 +233,34 @@ li {
 
 .three-up {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  gap: 18px;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 16px;
 }
 
-.panel {
-  padding: 24px;
+.two-up {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
 }
+
+.split {
+  display: grid;
+  grid-template-columns: minmax(0, 1.2fr) minmax(0, 1fr);
+  gap: 20px;
+}
+
+.stack {
+  display: grid;
+  gap: 16px;
+}
+
+/* ── Shot (screenshot card) ──────────── */
 
 .shot {
   overflow: hidden;
-  background: color-mix(in srgb, var(--paper) 95%, white 5%);
+  background: var(--paper);
   border: 1px solid var(--line);
-  border-radius: 24px;
+  border-radius: 16px;
   box-shadow: var(--shadow);
 }
 
@@ -188,25 +277,20 @@ li {
   margin-bottom: 8px;
 }
 
-.stack {
-  display: grid;
-  gap: 18px;
-}
-
-.split {
-  display: grid;
-  grid-template-columns: minmax(0, 1.2fr) minmax(0, 1fr);
-  gap: 20px;
-}
+/* ── Screen mockup ───────────────────── */
 
 .screen {
   overflow: hidden;
+  background: var(--paper);
+  border: 1px solid var(--line);
+  border-radius: 16px;
+  box-shadow: var(--shadow);
 }
 
 .screen-top {
   padding: 12px 16px;
   border-bottom: 1px solid var(--line);
-  background: #faf6ee;
+  background: #f7f5f0;
 }
 
 .screen-dots {
@@ -218,12 +302,14 @@ li {
   width: 12px;
   height: 12px;
   border-radius: 50%;
-  background: #e8d6b5;
+  background: #ddd5c8;
 }
 
 .screen-body {
   padding: 18px;
 }
+
+/* ── Chat bubbles ────────────────────── */
 
 .chat-log {
   display: grid;
@@ -233,19 +319,21 @@ li {
 .bubble {
   max-width: 90%;
   padding: 14px 16px;
-  border-radius: 18px;
+  border-radius: 16px;
 }
 
 .bubble.user {
   margin-left: auto;
-  background: #12352c;
-  color: #f5fffb;
+  background: var(--green-dark);
+  color: #f0faf5;
 }
 
 .bubble.ai {
-  background: #f2ebdd;
-  border: 1px solid #e2d7c0;
+  background: #f2eeea;
+  border: 1px solid var(--line);
 }
+
+/* ── Steps (numbered list) ───────────── */
 
 .steps {
   counter-reset: step;
@@ -255,7 +343,7 @@ li {
 
 .steps li {
   position: relative;
-  padding-left: 56px;
+  padding-left: 52px;
   margin-bottom: 18px;
 }
 
@@ -265,45 +353,116 @@ li {
   position: absolute;
   left: 0;
   top: 2px;
-  width: 38px;
-  height: 38px;
+  width: 36px;
+  height: 36px;
   border-radius: 50%;
   display: grid;
   place-items: center;
   background: var(--green);
   color: white;
   font-weight: 700;
+  font-size: 0.95rem;
 }
+
+/* ── Mini list ───────────────────────── */
 
 .mini-list {
   margin: 0;
   padding-left: 20px;
 }
 
+/* ── Code block ──────────────────────── */
+
 .code-block {
   overflow-x: auto;
   padding: 16px;
-  border-radius: 18px;
-  background: #1d2326;
-  color: #ecf2f4;
+  border-radius: 12px;
+  background: #1a2228;
+  color: #e8eff2;
   font-family: "SFMono-Regular", Consolas, "Liberation Mono", monospace;
-  font-size: 0.95rem;
+  font-size: 0.92rem;
+  white-space: pre-wrap;
 }
 
+/* ── Link list (simple nav links) ────── */
+
+.link-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.link-list li {
+  padding: 14px 0;
+  border-bottom: 1px solid var(--line);
+}
+
+.link-list li:last-child {
+  border-bottom: none;
+}
+
+.link-list a {
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.link-list .link-desc {
+  display: block;
+  color: var(--muted);
+  font-size: 0.94rem;
+  font-weight: 400;
+  margin-top: 2px;
+}
+
+/* ── Site nav ────────────────────────── */
+
+.site-nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px 16px;
+  padding: 16px 20px;
+  max-width: 860px;
+  margin: 0 auto;
+  font-size: 0.9rem;
+}
+
+.site-nav a {
+  color: var(--muted);
+  text-decoration: none;
+}
+
+.site-nav a:hover {
+  color: var(--green);
+}
+
+.site-nav .nav-here {
+  color: var(--ink);
+  font-weight: 600;
+}
+
+/* ── Footer ──────────────────────────── */
+
 .footer {
-  margin-top: 28px;
+  margin-top: 32px;
   text-align: center;
   color: var(--muted);
+  font-size: 0.94rem;
 }
+
+/* ── Responsive ──────────────────────── */
 
 @media (max-width: 820px) {
   .hero-split,
-  .split {
+  .split,
+  .two-up {
     grid-template-columns: 1fr;
   }
 
-  .hero,
+  .hero {
+    padding: 28px 22px;
+  }
+
   .panel {
-    padding: 24px;
+    padding: 22px;
   }
 }
