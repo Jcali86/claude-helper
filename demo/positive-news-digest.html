@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Positive Local News Digest — Live Demo</title>
+    <style>
+      :root {
+        --bg: #f6efe6;
+        --card: #fffdf9;
+        --ink: #1d2428;
+        --muted: #5b6870;
+        --line: #ddd3c2;
+        --green: #0d7a5f;
+        --green-dark: #084e3d;
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        margin: 0;
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+        color: var(--ink);
+        background:
+          radial-gradient(circle at top right, #fff1cb 0, transparent 22rem),
+          linear-gradient(180deg, #fbf7ef 0%, var(--bg) 100%);
+      }
+
+      .demo-banner {
+        background: var(--green);
+        color: white;
+        padding: 14px 20px;
+        text-align: center;
+        font-size: 0.95rem;
+      }
+
+      .demo-banner a {
+        color: #b4ead6;
+        font-weight: 600;
+      }
+
+      main {
+        max-width: 1080px;
+        margin: 0 auto;
+        padding: 30px 18px 60px;
+      }
+
+      .hero,
+      .card,
+      .story-card {
+        background: var(--card);
+        border: 1px solid var(--line);
+        border-radius: 20px;
+        box-shadow: 0 8px 30px rgba(29, 36, 40, 0.08);
+      }
+
+      .hero,
+      .card {
+        padding: 28px;
+      }
+
+      .hero h1 {
+        margin-top: 0;
+        font-size: 2rem;
+      }
+
+      .grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+        gap: 16px;
+      }
+
+      .story-card {
+        padding: 22px;
+      }
+
+      .story-source {
+        margin: 0 0 8px;
+        color: var(--green);
+        text-transform: uppercase;
+        letter-spacing: 0.05em;
+        font-size: 0.82rem;
+        font-weight: 600;
+      }
+
+      h1, h2, h3 {
+        margin-top: 0;
+      }
+
+      p, li {
+        line-height: 1.7;
+        font-size: 1.04rem;
+      }
+
+      .muted {
+        color: var(--muted);
+      }
+
+      a {
+        color: var(--green);
+      }
+
+      ul {
+        padding-left: 20px;
+      }
+
+      @media (max-width: 600px) {
+        .hero, .card { padding: 20px; }
+        .story-card { padding: 18px; }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="demo-banner">
+      This is a demo of the example app from <a href="../index.html">Claude Helper</a>.
+      Want to build it yourself? <a href="../docs/positive-news-example.html">Read the guide</a>.
+    </div>
+    <main>
+      <section class="hero">
+        <h1>Positive Local News Digest</h1>
+        <p class="muted">Generated at April 06, 2026 (demo using sample data)</p>
+        <p>
+          School celebrates student art and music festival — a positive community update.
+          City opens support center with food, job help, and local resources — a positive community update.
+          Local library opens new weekend reading program for families — a positive community update.
+        </p>
+      </section>
+
+      <section class="grid" style="margin-top: 20px;">
+        <article class="card">
+          <h2>What this app does</h2>
+          <p>
+            This starter looks at a few news or community feeds, searches for
+            more hopeful community-focused stories, and turns them into a clean digest
+            you can read in your browser.
+          </p>
+        </article>
+
+        <article class="card">
+          <h2>Notes from this run</h2>
+          <ul>
+            <li>Using local sample feed as a demo.</li>
+            <li>When running locally, the app tries live feeds first.</li>
+          </ul>
+        </article>
+      </section>
+
+      <section style="margin-top: 20px;">
+        <h2>Featured stories</h2>
+        <div class="grid">
+          <article class="story-card">
+            <p class="story-source">Sample community feed</p>
+            <h3>School celebrates student art and music festival</h3>
+            <p>Families, teachers, and local groups joined the celebration and supported student creativity.</p>
+            <p><a href="https://example.org/student-festival" target="_blank" rel="noreferrer">Open original source</a></p>
+          </article>
+
+          <article class="story-card">
+            <p class="story-source">Sample community feed</p>
+            <h3>City opens support center with food, job help, and local resources</h3>
+            <p>The center connects residents with food support, community programs, and practical next steps.</p>
+            <p><a href="https://example.org/support-center" target="_blank" rel="noreferrer">Open original source</a></p>
+          </article>
+
+          <article class="story-card">
+            <p class="story-source">Sample community feed</p>
+            <h3>Local library opens new weekend reading program for families</h3>
+            <p>The program gives families a free place to read, learn, and spend time together every Saturday.</p>
+            <p><a href="https://example.org/library-reading-program" target="_blank" rel="noreferrer">Open original source</a></p>
+          </article>
+
+          <article class="story-card">
+            <p class="story-source">Sample community feed</p>
+            <h3>Neighborhood volunteers restore community garden after storm</h3>
+            <p>Residents worked together to restore a shared green space and prepare it for spring classes.</p>
+            <p><a href="https://example.org/community-garden" target="_blank" rel="noreferrer">Open original source</a></p>
+          </article>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
