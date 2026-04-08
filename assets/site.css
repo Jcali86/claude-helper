@@ -466,9 +466,7 @@ section:not(.hero) > .button-row .button.secondary,
     padding: 22px;
   }
 
-  .hero-shot img {
-    max-height: 280px;
-    object-fit: cover;
-    object-position: top;
+  .hero-shot {
+    display: none;
   }
 }
