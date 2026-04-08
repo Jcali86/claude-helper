@@ -14,98 +14,76 @@
     <meta name="twitter:description" content="Calm, clear help for people who are new to Claude. No GitHub, no Terminal — just start.">
     <meta name="twitter:image" content="https://jcali86.github.io/claude-helper/assets/og-image.png">
     <link rel="stylesheet" href="assets/site.css">
+    <style>
+      .os-picker {
+        display: flex;
+        gap: 20px;
+        margin-top: 32px;
+        justify-content: center;
+      }
+      .os-picker a {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 12px;
+        width: 200px;
+        height: 140px;
+        border-radius: var(--radius);
+        text-decoration: none;
+        font-size: 1.15rem;
+        font-weight: 600;
+        transition: all 0.2s ease;
+      }
+      .os-picker a:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 8px 32px rgba(0, 0, 0, 0.25);
+      }
+      .os-picker .os-mac {
+        background: rgba(255, 255, 255, 0.1);
+        color: #f0ebe5;
+        border: 1px solid rgba(255, 255, 255, 0.15);
+      }
+      .os-picker .os-windows {
+        background: rgba(255, 255, 255, 0.1);
+        color: #f0ebe5;
+        border: 1px solid rgba(255, 255, 255, 0.15);
+      }
+      .os-picker .os-icon {
+        opacity: 0.9;
+      }
+      @media (max-width: 500px) {
+        .os-picker {
+          flex-direction: column;
+          align-items: center;
+        }
+        .os-picker a {
+          width: 100%;
+          max-width: 280px;
+          height: 120px;
+        }
+      }
+    </style>
   </head>
   <body>
-    <nav class="site-nav">
-      <span class="nav-here">Home</span>
-      <a href="docs/get-claude.html">Get Claude</a>
-      <a href="docs/chat-code-cowork.html">Mode Guide</a>
-      <a href="docs/first-10-minutes.html">First 10 Minutes</a>
-      <a href="docs/common-issues.html">Common Issues</a>
-    </nav>
     <main class="page">
-      <section class="hero hero-split">
-        <div class="hero-copy">
-          <span class="eyebrow">Beginner-Friendly Claude Help</span>
-          <h1>Start here if Claude feels new.</h1>
-          <p>
-            Claude Helper is for people who want calm, clear help with Claude on a Mac.
-            You do not need GitHub, Terminal, or Claude Code to start.
-          </p>
-          <div class="button-row">
-            <a class="button primary" href="docs/get-claude.html">Start here</a>
-            <a class="button secondary" href="docs/chat-code-cowork.html">I already have Claude</a>
-          </div>
-          <p style="margin-top: 14px; font-size: 0.94rem; opacity: 0.85;">
-            Do not want to install anything yet? <a href="https://claude.ai/referral/V_macvobSA?s=cowork&v=apps">Use Claude in your browser</a> — no download needed.
-          </p>
-        </div>
-
-        <div class="hero-shot">
-          <img src="assets/screenshots/chat/chat-home-first-app-prompt.png" alt="Real Claude Chat screenshot showing a beginner asking for help in plain English">
-        </div>
-      </section>
-
-      <section class="section-block">
-        <h2>What to do right now</h2>
-        <div class="panel panel-accent">
-          <ol class="steps">
-            <li>Get Claude on your Mac or open Claude in your browser.</li>
-            <li>Stay in Chat and send one simple message.</li>
-            <li>Learn what Chat, Cowork, and Code mean when you are ready.</li>
-            <li>Only later, if you need it, explore folders, projects, or Terminal.</li>
-          </ol>
-        </div>
-      </section>
-
-      <section class="section-block">
-        <h2>You can safely ignore all of this for now</h2>
-        <div class="panel panel-muted">
-          <p style="margin: 0;">
-            GitHub, Terminal, Claude Code, skills, connectors, and plugins are all things you do not need on day one.
-            You do not need to understand repos, commands, or extra tools to get your first useful result.
-          </p>
-        </div>
-      </section>
-
-      <section class="section-block">
-        <h2>Keep going when you feel ready</h2>
-        <p class="muted">
-          These pages are here when you want more help. You do not need to open all of them today.
+      <section class="hero" style="text-align: center; margin-top: 40px;">
+        <span class="eyebrow">Beginner-Friendly Claude Help</span>
+        <h1>Start here if Claude feels new.</h1>
+        <p>
+          Pick your computer. Everything after this is written just for you.
         </p>
-        <div class="panel">
-          <ul class="link-list">
-            <li>
-              <a href="docs/chat-code-cowork.html">Mode guide</a>
-              <span class="link-desc">Learn the difference between Chat, Cowork, and Code in plain English.</span>
-            </li>
-            <li>
-              <a href="docs/first-10-minutes.html">First 10 minutes</a>
-              <span class="link-desc">See real screenshots and simple prompts once you are already inside Claude.</span>
-            </li>
-            <li>
-              <a href="docs/common-issues.html">Common issues</a>
-              <span class="link-desc">If something feels off, confusing, or does not open the way you expected.</span>
-            </li>
-            <li>
-              <a href="docs/folder-paths.html">Folder paths</a>
-              <span class="link-desc">Only open this when a page asks you to work with files or folders on your Mac.</span>
-            </li>
-            <li>
-              <a href="docs/chat-examples.html">Real screenshots</a>
-              <span class="link-desc">See real Claude screens if you learn better by looking than by reading.</span>
-            </li>
-            <li>
-              <a href="docs/positive-news-example.html">Example app</a>
-              <span class="link-desc">For later, when you are ready to try a simple local project. <a href="demo/positive-news-digest.html">See it running</a>.</span>
-            </li>
-          </ul>
+        <div class="os-picker">
+          <a href="mac.html" class="os-mac">
+            <svg class="os-icon" width="40" height="40" viewBox="0 0 24 24" fill="currentColor"><path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.8-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"/></svg>
+            Mac
+          </a>
+          <a href="windows.html" class="os-windows">
+            <svg class="os-icon" width="40" height="40" viewBox="0 0 24 24" fill="currentColor"><path d="M3 12V6.75l6-1.32v6.48L3 12zm6.73-.07l8.27-.9V4.6L9.73 5.86v6.07zM18 13.08l-8.27.93v5.94l8.27 1.45v-8.32zM9 13.96l-6 .8v5.37l6 1.07v-7.24z"/></svg>
+            Windows
+          </a>
         </div>
       </section>
-
-      <p class="footer">
-        Built to help people learn Claude with more confidence, less pressure, and clearer next steps.
-      </p>
     </main>
   </body>
 </html>

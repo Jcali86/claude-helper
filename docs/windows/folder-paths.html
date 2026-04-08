@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Folder Paths on Windows</title>
+    <link rel="stylesheet" href="../../assets/site.css">
+  </head>
+  <body>
+    <nav class="site-nav">
+      <a href="../../windows.html">Home</a>
+      <a href="./get-claude.html">Get Claude</a>
+      <a href="../chat-code-cowork.html">Mode Guide</a>
+      <a href="../first-10-minutes.html">First 10 Minutes</a>
+      <a href="./common-issues.html">Common Issues</a>
+    </nav>
+    <main class="page">
+      <section class="hero">
+        <span class="eyebrow">Windows Basics</span>
+        <h1>Where are my files? A quick guide.</h1>
+        <p class="muted">
+          A folder path is just the address of a file or folder on your PC.
+          The good news: you almost never need to type one by hand.
+        </p>
+        <div class="button-row">
+          <a class="button primary" href="../../windows.html">Back to homepage</a>
+          <a class="button secondary" href="./common-issues.html">Common Issues</a>
+        </div>
+      </section>
+
+      <section class="split">
+        <article class="panel">
+          <h2>What a path looks like</h2>
+          <p>Example:</p>
+          <div class="code-block">C:\Users\yourname\Documents\Claude-Helper</div>
+          <p>
+            That means: start at the C: drive, open your user account, open <code>Documents</code>, then open the <code>Claude-Helper</code> folder.
+            Windows uses backslashes (<code>\</code>) between folders.
+          </p>
+        </article>
+
+        <article class="panel">
+          <h2>The easiest beginner method</h2>
+          <ol class="steps">
+            <li>Open File Explorer.</li>
+            <li>Find the folder you want.</li>
+            <li>Drag that folder into the Command Prompt or PowerShell window.</li>
+          </ol>
+          <p class="muted">
+            Windows will paste the full path for you.
+          </p>
+        </article>
+      </section>
+
+      <section class="split" style="margin-top: 20px;">
+        <article class="panel">
+          <h2>What <code>%USERPROFILE%</code> means</h2>
+          <p>
+            On Windows, <code>%USERPROFILE%</code> means your Home folder.
+          </p>
+          <div class="code-block">%USERPROFILE%\Documents</div>
+          <p>
+            It points to the same place as <code>C:\Users\yourname\Documents</code>.
+          </p>
+          <p class="muted">
+            You might also see <code>~</code> used in PowerShell — it works the same way there.
+          </p>
+        </article>
+
+        <article class="panel">
+          <h2>How paths go wrong</h2>
+          <ul class="mini-list">
+            <li>You copied someone else's username.</li>
+            <li>You copied a folder name that does not match your PC.</li>
+            <li>You used the wrong drive letter (like D: instead of C:).</li>
+            <li>You guessed instead of dragging the folder in.</li>
+          </ul>
+        </article>
+      </section>
+
+      <section class="split" style="margin-top: 20px;">
+        <article class="panel">
+          <h2>Plain-English example</h2>
+          <p>
+            If someone gives you this path:
+          </p>
+          <div class="code-block">C:\Users\jamie\Documents\Project</div>
+          <p>
+            and your Windows username is <code>Chris</code>, your version would need to use:
+          </p>
+          <div class="code-block">C:\Users\Chris\Documents\Project</div>
+        </article>
+
+        <article class="panel">
+          <h2>Another way to get the path</h2>
+          <p>
+            In File Explorer, click the address bar at the top. It will show you the full path, and you can copy it directly.
+          </p>
+          <p class="muted">
+            This works great if dragging feels awkward.
+          </p>
+        </article>
+      </section>
+
+      <section class="panel" style="margin-top: 20px;">
+        <h2>Best habit to keep</h2>
+        <p>
+          If you are unsure, do not guess. Use File Explorer, then drag the folder into Command Prompt or PowerShell — or click the address bar and copy.
+        </p>
+      </section>
+    </main>
+  </body>
+</html>
