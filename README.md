@@ -1,6 +1,6 @@
 # Claude Helper
 
-Claude Helper is a beginner-friendly guide for people who are new to Claude, new to Mac workflows, or just tired of instructions that assume too much too early.
+Claude Helper is a beginner-friendly guide for people who are new to Claude, new to Mac/Windows workflows, or just tired of instructions that assume too much too early.
 
 If you are here to learn Claude, do not start on GitHub.
 
